@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "inverse-primary": "#afc8f0",
+              "primary-fixed": "#d4e3ff",
+              "inverse-surface": "#23323c",
+              "on-primary-container": "#6f88ad",
+              "tertiary-fixed": "#93f2f2",
+              "outline": "#74777f",
+              "background": "#f5faff",
+              "on-secondary-fixed": "#1b1d0e",
+              "on-surface-variant": "#43474e",
+              "secondary-fixed": "#e4e4cc",
+              "on-primary-fixed-variant": "#2f486a",
+              "on-error": "#ffffff",
+              "secondary": "#5e604d",
+              "outline-variant": "#c4c6cf",
+              "on-secondary-container": "#636451",
+              "on-primary-fixed": "#001c3a",
+              "surface-container-highest": "#d5e5f1",
+              "tertiary-fixed-dim": "#76d6d5",
+              "on-primary": "#ffffff",
+              "on-secondary": "#ffffff",
+              "on-tertiary-container": "#2c9494",
+              "surface-container-lowest": "#ffffff",
+              "surface-container": "#e0f0fd",
+              "on-tertiary": "#ffffff",
+              "surface": "#f5faff",
+              "on-error-container": "#93000a",
+              "inverse-on-surface": "#e4f3ff",
+              "primary-fixed-dim": "#afc8f0",
+              "on-tertiary-fixed": "#002020",
+              "tertiary": "#000707",
+              "secondary-container": "#e1e1c9",
+              "error": "#ba1a1a",
+              "tertiary-container": "#002323",
+              "primary-container": "#001f3f",
+              "surface-dim": "#ccdce9",
+              "surface-container-high": "#daeaf7",
+              "secondary-fixed-dim": "#c8c8b0",
+              "surface-tint": "#476083",
+              "surface-container-low": "#e9f5ff",
+              "primary": "#000613",
+              "on-secondary-fixed-variant": "#474836",
+              "on-surface": "#0e1d26",
+              "on-background": "#0e1d26",
+              "on-tertiary-fixed-variant": "#004f4f",
+              "error-container": "#ffdad6",
+              "surface-bright": "#f5faff",
+              "surface-variant": "#d5e5f1"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .pyramid-accent {
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body selection:bg-tertiary-fixed selection:text-on-tertiary-fixed">
+<!-- TopNavBar -->
+<nav class="sticky top-0 z-50 w-full bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-bold tracking-tighter text-slate-900 dark:text-slate-50 font-headline">Pyramis</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-teal-600 dark:text-teal-400 font-bold border-b-2 border-teal-600 font-['Space_Grotesk'] text-sm tracking-tight" href="#">Services</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors font-['Space_Grotesk'] text-sm tracking-tight font-medium" href="#">Industries</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors font-['Space_Grotesk'] text-sm tracking-tight font-medium" href="#">About</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors font-['Space_Grotesk'] text-sm tracking-tight font-medium" href="#">Insights</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors font-['Space_Grotesk'] text-sm tracking-tight font-medium" href="#">Resources</a>
+</div>
+<button class="bg-tertiary-container text-on-tertiary-fixed px-6 py-2.5 rounded text-sm font-semibold hover:opacity-80 transition-opacity active:scale-95 duration-150 ease-in-out">
+                Book a Consultation
+            </button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative pt-24 pb-32 px-8 overflow-hidden bg-primary">
+<div class="max-w-7xl mx-auto relative z-10">
+<div class="max-w-3xl">
+<span class="inline-block px-3 py-1 bg-tertiary-fixed/10 border border-tertiary-fixed/20 text-tertiary-fixed text-xs font-bold tracking-widest uppercase mb-6">Expertise Overview</span>
+<h1 class="text-6xl md:text-7xl font-headline font-bold text-white tracking-tighter leading-none mb-8">
+                        The Six Pillars of <span class="text-tertiary-fixed">Excellence.</span>
+</h1>
+<p class="text-xl text-on-primary-container leading-relaxed max-w-2xl">
+                        A holistic approach to enterprise transformation. We integrate strategic vision with operational precision to build resilient, future-ready organizations.
+                    </p>
+</div>
+</div>
+<!-- Background Decoration -->
+<div class="absolute top-0 right-0 w-1/2 h-full opacity-10 pyramid-accent bg-gradient-to-br from-tertiary-fixed to-transparent -translate-y-1/2 translate-x-1/4"></div>
+</section>
+<!-- Services Pillars - Bento Style Grid -->
+<section class="py-24 px-8 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Pillar 1: Strategy & Growth -->
+<div class="md:col-span-8 bg-surface-container-low p-10 rounded-xl group hover:bg-surface-container-high transition-colors">
+<div class="flex flex-col md:flex-row gap-10">
+<div class="flex-shrink-0">
+<div class="w-16 h-16 bg-primary-container flex items-center justify-center rounded-lg">
+<span class="material-symbols-outlined text-tertiary-fixed text-3xl" data-icon="insights">insights</span>
+</div>
+</div>
+<div class="flex-grow">
+<h3 class="text-3xl font-headline font-bold text-primary mb-4">Strategy &amp; Growth</h3>
+<p class="text-on-surface-variant mb-8 text-lg leading-relaxed">Defining the path to market leadership through rigorous analysis and bold market positioning.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-teal-600 text-sm mt-1" data-icon="check_circle" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="text-sm font-medium">Market Entry &amp; Expansion</span>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-teal-600 text-sm mt-1" data-icon="check_circle" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="text-sm font-medium">Competitive Positioning</span>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-teal-600 text-sm mt-1" data-icon="check_circle" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="text-sm font-medium">M&amp;A Strategy</span>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-teal-600 text-sm mt-1" data-icon="check_circle" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="text-sm font-medium">Revenue Acceleration</span>
+</div>
+</div>
+<button class="inline-flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all">
+                                    Discuss this area <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Pillar 2: Operations & Process -->
+<div class="md:col-span-4 bg-surface-container-low p-10 rounded-xl group hover:bg-surface-container-high transition-colors">
+<div class="w-16 h-16 bg-primary-container flex items-center justify-center rounded-lg mb-6">
+<span class="material-symbols-outlined text-tertiary-fixed text-3xl" data-icon="settings_suggest">settings_suggest</span>
+</div>
+<h3 class="text-2xl font-headline font-bold text-primary mb-4">Operations &amp; Process</h3>
+<p class="text-on-surface-variant mb-6 text-sm leading-relaxed">Streamlining internal workflows to maximize efficiency and reduce operational friction.</p>
+<ul class="space-y-3 mb-8">
+<li class="flex items-center gap-2 text-xs font-semibold text-on-surface"><span class="w-1.5 h-1.5 bg-teal-500 rounded-full"></span> Lean Transformation</li>
+<li class="flex items-center gap-2 text-xs font-semibold text-on-surface"><span class="w-1.5 h-1.5 bg-teal-500 rounded-full"></span> Supply Chain Resiliency</li>
+</ul>
+<button class="text-primary text-sm font-bold border-b border-primary/20 pb-1">Discuss this area</button>
+</div>
+<!-- Pillar 3: Digital & Technology -->
+<div class="md:col-span-4 bg-surface-container-low p-10 rounded-xl group hover:bg-surface-container-high transition-colors">
+<div class="w-16 h-16 bg-primary-container flex items-center justify-center rounded-lg mb-6">
+<span class="material-symbols-outlined text-tertiary-fixed text-3xl" data-icon="terminal">terminal</span>
+</div>
+<h3 class="text-2xl font-headline font-bold text-primary mb-4">Digital &amp; Technology</h3>
+<p class="text-on-surface-variant mb-6 text-sm leading-relaxed">Harnessing advanced analytics and AI to drive digital-first innovation and infrastructure.</p>
+<ul class="space-y-3 mb-8">
+<li class="flex items-center gap-2 text-xs font-semibold text-on-surface"><span class="w-1.5 h-1.5 bg-teal-500 rounded-full"></span> AI &amp; ML Integration</li>
+<li class="flex items-center gap-2 text-xs font-semibold text-on-surface"><span class="w-1.5 h-1.5 bg-teal-500 rounded-full"></span> Cloud Architecture</li>
+</ul>
+<button class="text-primary text-sm font-bold border-b border-primary/20 pb-1">Discuss this area</button>
+</div>
+<!-- Pillar 4: Financial & Performance -->
+<div class="md:col-span-8 bg-surface-container-low p-10 rounded-xl group hover:bg-surface-container-high transition-colors">
+<div class="flex flex-col md:flex-row gap-10">
+<div class="flex-shrink-0">
+<div class="w-16 h-16 bg-primary-container flex items-center justify-center rounded-lg">
+<span class="material-symbols-outlined text-tertiary-fixed text-3xl" data-icon="account_balance">account_balance</span>
+</div>
+</div>
+<div class="flex-grow">
+<h3 class="text-3xl font-headline font-bold text-primary mb-4">Financial &amp; Performance</h3>
+<p class="text-on-surface-variant mb-8 text-lg leading-relaxed">Optimizing fiscal health through predictive modeling and rigorous performance management frameworks.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-teal-600 text-sm mt-1" data-icon="check_circle" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="text-sm font-medium">Capital Allocation Strategy</span>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-teal-600 text-sm mt-1" data-icon="check_circle" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="text-sm font-medium">Profitability Analysis</span>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-teal-600 text-sm mt-1" data-icon="check_circle" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="text-sm font-medium">Risk Mitigation</span>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-teal-600 text-sm mt-1" data-icon="check_circle" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="text-sm font-medium">KPI Engineering</span>
+</div>
+</div>
+<button class="inline-flex items-center gap-2 text-primary font-bold hover:gap-4 transition-all">
+                                    Discuss this area <span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Pillar 5: People & Organization -->
+<div class="md:col-span-6 bg-surface-container-low p-10 rounded-xl group hover:bg-surface-container-high transition-colors">
+<div class="w-16 h-16 bg-primary-container flex items-center justify-center rounded-lg mb-6">
+<span class="material-symbols-outlined text-tertiary-fixed text-3xl" data-icon="groups">groups</span>
+</div>
+<h3 class="text-2xl font-headline font-bold text-primary mb-4">People &amp; Organization</h3>
+<p class="text-on-surface-variant mb-6 text-base leading-relaxed">Building the culture and structures required to attract, retain, and empower top-tier talent.</p>
+<div class="space-y-3 mb-8">
+<p class="text-sm text-on-surface font-medium flex items-center gap-2"><span class="w-1.5 h-1.5 bg-teal-500"></span> Leadership Development</p>
+<p class="text-sm text-on-surface font-medium flex items-center gap-2"><span class="w-1.5 h-1.5 bg-teal-500"></span> Org Design &amp; Governance</p>
+</div>
+<button class="inline-flex items-center gap-2 text-primary font-bold">Discuss this area <span class="material-symbols-outlined text-sm" data-icon="north_east">north_east</span></button>
+</div>
+<!-- Pillar 6: Change & Transformation -->
+<div class="md:col-span-6 bg-surface-container-low p-10 rounded-xl group hover:bg-surface-container-high transition-colors">
+<div class="w-16 h-16 bg-primary-container flex items-center justify-center rounded-lg mb-6">
+<span class="material-symbols-outlined text-tertiary-fixed text-3xl" data-icon="auto_awesome">auto_awesome</span>
+</div>
+<h3 class="text-2xl font-headline font-bold text-primary mb-4">Change &amp; Transformation</h3>
+<p class="text-on-surface-variant mb-6 text-base leading-relaxed">Navigating complex organizational shifts with precision, ensuring adoption and sustainable impact.</p>
+<div class="space-y-3 mb-8">
+<p class="text-sm text-on-surface font-medium flex items-center gap-2"><span class="w-1.5 h-1.5 bg-teal-500"></span> Cultural Alignment</p>
+<p class="text-sm text-on-surface font-medium flex items-center gap-2"><span class="w-1.5 h-1.5 bg-teal-500"></span> Implementation Roadmap</p>
+</div>
+<button class="inline-flex items-center gap-2 text-primary font-bold">Discuss this area <span class="material-symbols-outlined text-sm" data-icon="north_east">north_east</span></button>
+</div>
+</div>
+</div>
+</section>
+<!-- Engagement Models Section -->
+<section class="py-24 px-8 bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16">
+<h2 class="text-4xl md:text-5xl font-headline font-bold text-primary tracking-tight mb-4">Engagement Models</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">Flexible partnership frameworks designed to suit your project scope and organizational needs.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Project-based -->
+<div class="bg-surface-container-lowest p-8 rounded border border-outline-variant/10 shadow-sm relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition-opacity">
+<span class="material-symbols-outlined text-8xl" data-icon="architecture">architecture</span>
+</div>
+<h4 class="text-xl font-headline font-bold text-primary mb-4">Project-based</h4>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Defined scope with clear deliverables and timelines. Ideal for specific transformations or market entries.</p>
+<div class="pt-6 border-t border-outline-variant/10">
+<span class="text-xs font-bold uppercase tracking-widest text-teal-600">Best for: Specific Goals</span>
+</div>
+</div>
+<!-- Retainer -->
+<div class="bg-primary text-white p-8 rounded shadow-2xl relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-4 opacity-10">
+<span class="material-symbols-outlined text-8xl" data-icon="verified_user">verified_user</span>
+</div>
+<h4 class="text-xl font-headline font-bold mb-4">Retainer</h4>
+<p class="text-on-primary-container text-sm mb-6 leading-relaxed">Continuous support and ongoing strategic advisory. We become an extension of your executive team.</p>
+<div class="pt-6 border-t border-white/10">
+<span class="text-xs font-bold uppercase tracking-widest text-tertiary-fixed">Best for: Constant Growth</span>
+</div>
+</div>
+<!-- Advisory Board -->
+<div class="bg-surface-container-lowest p-8 rounded border border-outline-variant/10 shadow-sm relative overflow-hidden group">
+<div class="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition-opacity">
+<span class="material-symbols-outlined text-8xl" data-icon="meeting_room">meeting_room</span>
+</div>
+<h4 class="text-xl font-headline font-bold text-primary mb-4">Advisory Board</h4>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Quarterly reviews and high-level strategic oversight. Perfect for established firms seeking external perspective.</p>
+<div class="pt-6 border-t border-outline-variant/10">
+<span class="text-xs font-bold uppercase tracking-widest text-teal-600">Best for: Governance</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-24 px-8 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="bg-tertiary-container rounded-xl p-12 md:p-20 text-center relative overflow-hidden">
+<div class="relative z-10">
+<h2 class="text-4xl md:text-5xl font-headline font-bold text-on-tertiary-fixed mb-6">Ready to scale your vision?</h2>
+<p class="text-on-tertiary-fixed-variant max-w-xl mx-auto text-lg mb-10">Connect with our partners to explore how the Six Pillars can be applied to your specific business context.</p>
+<div class="flex flex-col md:flex-row justify-center gap-4">
+<button class="bg-primary text-white px-8 py-4 rounded font-bold hover:bg-primary/90 transition-colors">Schedule Strategy Call</button>
+<button class="bg-white/10 text-on-tertiary-fixed border border-on-tertiary-fixed/20 px-8 py-4 rounded font-bold hover:bg-white/20 transition-colors">Download Service Deck</button>
+</div>
+</div>
+<!-- Pyramid Decoration -->
+<div class="absolute bottom-0 left-0 w-64 h-64 bg-teal-400/10 pyramid-accent -translate-x-1/2 translate-y-1/2"></div>
+<div class="absolute top-0 right-0 w-48 h-48 bg-teal-400/5 pyramid-accent rotate-180 translate-x-1/4 -translate-y-1/4"></div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-slate-900 w-full border-t border-slate-200 dark:border-slate-800">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 py-16 max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="text-xl font-bold tracking-tighter text-slate-900 dark:text-slate-50 mb-6 font-headline">Pyramis</div>
+<p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed mb-6 font-['Inter']">Modern consulting for the architectural era of business performance.</p>
+</div>
+<div>
+<h5 class="font-headline font-bold text-primary mb-6 text-sm uppercase tracking-widest">Solutions</h5>
+<ul class="space-y-4">
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 text-sm font-['Inter'] hover:underline transition-all" href="#">Strategy</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 text-sm font-['Inter'] hover:underline transition-all" href="#">Operations</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 text-sm font-['Inter'] hover:underline transition-all" href="#">Digital</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-headline font-bold text-primary mb-6 text-sm uppercase tracking-widest">Company</h5>
+<ul class="space-y-4">
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 text-sm font-['Inter'] hover:underline transition-all" href="#">About</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 text-sm font-['Inter'] hover:underline transition-all" href="#">Insights</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 text-sm font-['Inter'] hover:underline transition-all" href="#">Resources</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-headline font-bold text-primary mb-6 text-sm uppercase tracking-widest">Connect</h5>
+<ul class="space-y-4">
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 text-sm font-['Inter'] hover:underline transition-all" href="#">Contact</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 text-sm font-['Inter'] hover:underline transition-all" href="#">LinkedIn</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 text-sm font-['Inter'] hover:underline transition-all" href="#">Twitter</a></li>
+</ul>
+</div>
+</div>
+<div class="px-8 py-8 border-t border-slate-200 dark:border-slate-800 max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-slate-500 dark:text-slate-400 text-sm font-['Inter']">© 2024 Pyramis Consulting. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="text-slate-500 dark:text-slate-400 text-xs hover:text-slate-900 transition-colors" href="#">Privacy Policy</a>
+<a class="text-slate-500 dark:text-slate-400 text-xs hover:text-slate-900 transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</body></html>

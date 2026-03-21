@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pyramis | Premier Business Consulting Cyprus</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "error-container": "#ffdad6",
+                        "on-error": "#ffffff",
+                        "inverse-on-surface": "#f0f1f1",
+                        "surface": "#f9f9f9",
+                        "surface-container-high": "#e8e8e8",
+                        "surface-bright": "#f9f9f9",
+                        "secondary-container": "#fed488",
+                        "primary-fixed": "#d6e3ff",
+                        "surface-container-low": "#f3f3f4",
+                        "background": "#f9f9f9",
+                        "surface-dim": "#dadada",
+                        "on-secondary-container": "#785a1a",
+                        "on-tertiary": "#ffffff",
+                        "on-surface": "#1a1c1c",
+                        "surface-container": "#eeeeee",
+                        "on-primary-container": "#708ab5",
+                        "inverse-surface": "#2f3131",
+                        "secondary-fixed": "#ffdea5",
+                        "surface-tint": "#465f88",
+                        "surface-container-lowest": "#ffffff",
+                        "error": "#ba1a1a",
+                        "tertiary": "#180500",
+                        "primary-container": "#002147",
+                        "secondary": "#775a19",
+                        "outline-variant": "#c4c6cf",
+                        "on-secondary-fixed": "#261900",
+                        "on-error-container": "#93000a",
+                        "secondary-fixed-dim": "#e9c176",
+                        "on-secondary": "#ffffff",
+                        "primary-fixed-dim": "#aec7f6",
+                        "on-tertiary-fixed-variant": "#6c391d",
+                        "inverse-primary": "#aec7f6",
+                        "tertiary-container": "#3d1500",
+                        "on-primary-fixed-variant": "#2d476f",
+                        "primary": "#000a1e",
+                        "tertiary-fixed-dim": "#ffb691",
+                        "on-tertiary-fixed": "#341100",
+                        "on-primary": "#ffffff",
+                        "on-secondary-fixed-variant": "#5d4201",
+                        "outline": "#74777f",
+                        "on-surface-variant": "#44474e",
+                        "on-tertiary-container": "#b97958",
+                        "on-primary-fixed": "#001b3d",
+                        "tertiary-fixed": "#ffdbcb",
+                        "surface-variant": "#e2e2e2",
+                        "on-background": "#1a1c1c",
+                        "surface-container-highest": "#e2e2e2"
+                    },
+                    fontFamily: {
+                        "headline": ["Noto Serif"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .monolith-line {
+            width: 2px;
+            background-color: #e9c176; /* secondary-fixed-dim */
+        }
+        .text-glow {
+            text-shadow: 0 0 20px rgba(255, 222, 165, 0.2);
+        }
+        .glass-nav {
+            background-color: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 glass-nav shadow-sm shadow-slate-900/5 transition-all duration-500">
+<div class="flex justify-between items-center w-full px-8 py-5 max-w-7xl mx-auto">
+<div class="text-2xl font-headline font-bold tracking-tighter text-slate-950">Pyramis</div>
+<div class="hidden md:flex items-center space-x-12">
+<a class="text-slate-900 border-b-2 border-secondary pb-1 font-label text-sm uppercase tracking-widest" href="#">Services</a>
+<a class="text-slate-600 font-medium font-label text-sm uppercase tracking-widest hover:text-secondary transition-colors duration-300" href="#">Why Cyprus</a>
+<a class="text-slate-600 font-medium font-label text-sm uppercase tracking-widest hover:text-secondary transition-colors duration-300" href="#">About</a>
+</div>
+<div class="flex items-center">
+<button class="bg-primary text-on-primary px-8 py-2.5 rounded-md font-label text-sm uppercase tracking-widest hover:shadow-lg transition-all duration-300 border-b-2 border-transparent hover:border-secondary">
+                    Contact
+                </button>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative min-h-screen flex items-center pt-20 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Mediterranean Architecture" class="w-full h-full object-cover" data-alt="Aerial view of luxury Cyprus coastline and modern architecture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXSs8bqTz9COwame3WDMuDTMmXZgc-6O-WA8Bg29UgaFu6HFllYPKjb_-RD_ydCoAvMV3yjNPBU1tEZQ1prMzuOQQOR-zmoBLCs3SgPiatqA24DldMQEBR-bEAxYJlGhrsCzr9ZZpwkWZrvLpk_YpsewTfuoWpxNg-BbuxgNEnTgCNEL8ESgTWeoG6teJhAnpbzEiB7vyiRWZMBwoC2dDjGzFToOi10NLaYRm8p5qeFfBF9Ugi9JfYBcsrW_KqUEtyUcreLVPNHMBy"/>
+<div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/80 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-7xl mx-auto px-8 w-full">
+<div class="max-w-3xl">
+<div class="flex items-center gap-4 mb-8">
+<div class="monolith-line h-12"></div>
+<span class="font-label text-secondary-fixed-dim uppercase tracking-[0.3em] text-sm font-bold">Premier Consulting</span>
+</div>
+<h1 class="font-headline text-6xl md:text-8xl text-white -tracking-tight leading-[1.1] mb-10">
+                    Navigating Growth in the East Med.
+                </h1>
+<p class="text-slate-300 text-xl font-light leading-relaxed mb-12 max-w-xl">
+                    Pyramis provides bespoke corporate strategy and tax advisory services for visionary firms establishing their presence in the Mediterranean’s most strategic hub.
+                </p>
+<div class="flex flex-wrap gap-6">
+<button class="bg-primary text-on-primary px-10 py-5 rounded-md font-label text-sm uppercase tracking-widest hover:shadow-[0_10px_40px_-10px_rgba(119,90,25,0.3)] transition-all duration-500 border-b-2 border-secondary">
+                        Explore Our Services
+                    </button>
+<button class="border border-white/20 text-white px-10 py-5 rounded-md font-label text-sm uppercase tracking-widest hover:bg-white/5 transition-all duration-300">
+                        Our Vision
+                    </button>
+</div>
+</div>
+</div>
+</header>
+<!-- Core Services Section -->
+<section class="py-32 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-end mb-24">
+<div class="lg:col-span-8">
+<span class="font-label text-secondary uppercase tracking-[0.2em] text-xs font-bold mb-4 block">Our Expertise</span>
+<h2 class="font-headline text-5xl text-primary -tracking-tight">Strategic Architecture for Global Enterprise</h2>
+</div>
+<div class="lg:col-span-4">
+<p class="text-on-surface-variant text-lg leading-relaxed italic border-l-2 border-secondary-fixed-dim pl-6">
+                        Excellence is not an act, but a habit. We curate solutions that transcend standard advisory.
+                    </p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-outline-variant/20">
+<!-- Service 1 -->
+<div class="bg-surface-container-lowest p-12 group hover:bg-primary-container transition-all duration-500 cursor-default">
+<div class="w-16 h-16 bg-secondary-fixed/30 rounded-full flex items-center justify-center mb-10 group-hover:bg-secondary transition-colors">
+<span class="material-symbols-outlined text-secondary group-hover:text-white text-3xl" data-icon="account_balance">account_balance</span>
+</div>
+<h3 class="font-headline text-2xl text-primary group-hover:text-white mb-6">Corporate Strategy</h3>
+<p class="text-on-surface-variant group-hover:text-slate-400 leading-relaxed mb-8">
+                        Comprehensive structural frameworks designed to align your Mediterranean operations with global growth trajectories.
+                    </p>
+<a class="inline-flex items-center text-secondary font-label text-xs uppercase tracking-widest font-bold group-hover:text-secondary-fixed" href="#">
+                        View Detailed Scope
+                        <span class="material-symbols-outlined ml-2 text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<!-- Service 2 -->
+<div class="bg-surface-container-lowest p-12 group hover:bg-primary-container transition-all duration-500 cursor-default">
+<div class="w-16 h-16 bg-secondary-fixed/30 rounded-full flex items-center justify-center mb-10 group-hover:bg-secondary transition-colors">
+<span class="material-symbols-outlined text-secondary group-hover:text-white text-3xl" data-icon="receipt_long">receipt_long</span>
+</div>
+<h3 class="font-headline text-2xl text-primary group-hover:text-white mb-6">Tax Advisory</h3>
+<p class="text-on-surface-variant group-hover:text-slate-400 leading-relaxed mb-8">
+                        Sophisticated tax optimization strategies leveraging Cyprus’s favorable regulatory environment for maximum efficiency.
+                    </p>
+<a class="inline-flex items-center text-secondary font-label text-xs uppercase tracking-widest font-bold group-hover:text-secondary-fixed" href="#">
+                        Compliance Insights
+                        <span class="material-symbols-outlined ml-2 text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<!-- Service 3 -->
+<div class="bg-surface-container-lowest p-12 group hover:bg-primary-container transition-all duration-500 cursor-default">
+<div class="w-16 h-16 bg-secondary-fixed/30 rounded-full flex items-center justify-center mb-10 group-hover:bg-secondary transition-colors">
+<span class="material-symbols-outlined text-secondary group-hover:text-white text-3xl" data-icon="travel_explore">travel_explore</span>
+</div>
+<h3 class="font-headline text-2xl text-primary group-hover:text-white mb-6">Market Entry</h3>
+<p class="text-on-surface-variant group-hover:text-slate-400 leading-relaxed mb-8">
+                        Seamless integration into the Cyprus business landscape through localized intelligence and institutional networking.
+                    </p>
+<a class="inline-flex items-center text-secondary font-label text-xs uppercase tracking-widest font-bold group-hover:text-secondary-fixed" href="#">
+                        Market Analysis
+                        <span class="material-symbols-outlined ml-2 text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Cyprus Section (The Monolith Header Style) -->
+<section class="relative overflow-hidden bg-primary-container py-32">
+<div class="absolute right-0 top-0 w-1/3 h-full opacity-20 hidden lg:block">
+<img alt="Cyprus Strategic Location" class="w-full h-full object-cover grayscale" data-alt="Monochrome geometric architectural pattern" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAn7-uiMXGfhdjoggMYS6S_t2xp3keGzRvUzth1_UUC7EBA3cI4Ww1IlXbKFTnkNUc1oUlKnVAKU0ppLYFgO3lGUH0Wn5Iqecymobd99d__V10YRDO_RjcNzkHopEad6MtfCfy2xMNUN5gpZZHwkDXUz4UUglvjzpRPr7z12M2W6HymI42mx85tMdRKTDyJHCTmq5_GsHoEYnO-0sd1qIFASkf8__e1mMwhGky6CIlz9NUhtyukIJbZF1pZMLW_bxdI3gs3rl09H1jl"/>
+</div>
+<div class="max-w-7xl mx-auto px-8 relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
+<div>
+<div class="flex items-center gap-6 mb-12">
+<div class="monolith-line h-24"></div>
+<div>
+<span class="font-label text-secondary-fixed-dim uppercase tracking-widest text-sm mb-2 block">Strategic Positioning</span>
+<h2 class="font-headline text-5xl text-white leading-tight">The Gateway to Three Continents</h2>
+</div>
+</div>
+<div class="space-y-10">
+<div class="flex gap-6">
+<span class="font-headline text-secondary-fixed-dim text-3xl opacity-50">01</span>
+<div>
+<h4 class="text-white font-headline text-xl mb-3">IP Box Regime</h4>
+<p class="text-slate-300 leading-relaxed">Cyprus offers one of the most competitive intellectual property regimes in Europe, with an effective tax rate as low as 2.5%.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<span class="font-headline text-secondary-fixed-dim text-3xl opacity-50">02</span>
+<div>
+<h4 class="text-white font-headline text-xl mb-3">EU Access</h4>
+<p class="text-slate-300 leading-relaxed">Full access to the European Single Market while maintaining a strategic vantage point for MENA and Asian markets.</p>
+</div>
+</div>
+<div class="flex gap-6">
+<span class="font-headline text-secondary-fixed-dim text-3xl opacity-50">03</span>
+<div>
+<h4 class="text-white font-headline text-xl mb-3">Common Law System</h4>
+<p class="text-slate-300 leading-relaxed">A legal framework based on English Common Law principles, providing familiarity and security for international investors.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-4 pt-12">
+<img alt="Limassol Business District" class="w-full h-64 object-cover rounded-md" data-alt="Modern Limassol office skyline by the sea" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMKyIuNxbFg23GZG6sYydoUaH1Ecz81HlaR4A4ACIR_uPmAkWJHaYjaUimzsqS3tEOgSOvxjZsclv0ADjprKGx6bYqVRoeuMvHKbPMUX0RgGqNqRfg25vnWjWicJT-FuWrQixv9CC7a-UfrdVHGKKNjzUhxXRJhxRotehHINUMEyxFS1tsh4D0LSA6BHssakqN8cSW0EOtnsMryoTUYSoG8SUor_KBOcreWrvPjrXur1neAPfZa-3_fvN6ne358eXGqq9yevnK-fQy"/>
+<img alt="Cyprus Meeting" class="w-full h-80 object-cover rounded-md" data-alt="Professional meeting in a high-end corporate setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCh8GsPaXKpbbik_ixtPnJkjyFiWprBRoGL-q30sUE0O3dfGtQECgP_d1UJFJUqqhmVBHE6mDDz8jQobEQc93h5Y_RGz_8B6AlIvAjY5sFytZyoSPvG9FpOLS-VJiipekFfhPdn9uYZdyJ2w7nb6pB7yhpM3JCs8g6Ay7E3MP1KggZsiP55dGnzZYueGYzfIbJmzymQWIctD1__KnKMqUsNdebTs1hALRlzK2XoMBY6F4iV_5fNrP2pb3mVSlVMmKAQOKfJhcsAy_G0"/>
+</div>
+<div class="space-y-4">
+<img alt="Modern Architecture" class="w-full h-80 object-cover rounded-md" data-alt="Glass and steel skyscraper facade" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALqa295sefo4n3_9sWr-P_S5mL7YkfJLUm7iZrwPl5crZVvT7Il0B1fZZcRCwX4bsihKwkWgwW2sVWMaQfiGf9cUjEogk_uglm6BXIhRizJaJvMaTDQo9E0YSwTJJ15-jkOjOnmqapj3Slu_baALfdWdytTGuhXrvIm1zinS54wEpgwYCYAtgPaTRqCKrseXe_5tAW5bRQGrMOaXOGoh92GC8xsJmpRhq0JExb-gomL6zIGXv8qSATSHernZjRkx-1zOx8oUlwxwyZ"/>
+<img alt="Luxury Business" class="w-full h-64 object-cover rounded-md" data-alt="Luxury yacht in a Cyprus marina at dusk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3rDLLng8oi29_VQ4akh3zoebh5SYsts3NsCi3pMuYBthVr6bkv_Y5zWYEAPG6X0Lj9AO765WI3Yj_IW_sQNc85SNci8CdblLA6S11IOFIWZloPpbY-6mSC1DjSPV42YOStv4_N_XY2wL1y0Cg_UN7afG5-Elzxq9hGzVtJ2bERpojvOS-HNVXQ4M7l9APJ6mnP4MYuYenA_E_yAzttwzjVC_Jiq_ujAMc06t88FDC3EzUSzkAuakValXoGp27d2uHq7ltbOHidBXO"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Lead Capture Section -->
+<section class="py-32 bg-surface-container-low">
+<div class="max-w-4xl mx-auto px-8">
+<div class="bg-surface-container-lowest p-12 md:p-20 shadow-xl shadow-primary/5 relative">
+<div class="text-center mb-16">
+<span class="font-label text-secondary uppercase tracking-[0.3em] text-xs font-bold mb-6 block">Initial Inquiry</span>
+<h2 class="font-headline text-4xl text-primary mb-4">Request a Consultation</h2>
+<p class="text-on-surface-variant max-w-xl mx-auto">Our senior partners personally review all inquiries to ensure the highest standard of tailored corporate advice.</p>
+</div>
+<form action="#" class="space-y-12">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="relative group">
+<label class="block font-label text-xs uppercase tracking-widest text-primary mb-2">Full Name</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:border-secondary focus:ring-0 text-primary px-0 py-3 transition-colors duration-300" placeholder="Alexander Michaelides" type="text"/>
+</div>
+<div class="relative group">
+<label class="block font-label text-xs uppercase tracking-widest text-primary mb-2">Corporate Email</label>
+<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:border-secondary focus:ring-0 text-primary px-0 py-3 transition-colors duration-300" placeholder="a.michaelides@firm.com" type="email"/>
+</div>
+</div>
+<div class="relative group">
+<label class="block font-label text-xs uppercase tracking-widest text-primary mb-2">Service of Interest</label>
+<select class="w-full bg-transparent border-0 border-b border-outline-variant focus:border-secondary focus:ring-0 text-primary px-0 py-3 appearance-none transition-colors duration-300">
+<option>Corporate Strategy</option>
+<option>Tax Advisory &amp; Compliance</option>
+<option>Market Entry &amp; Setup</option>
+<option>Other Advisory Services</option>
+</select>
+</div>
+<div class="relative group">
+<label class="block font-label text-xs uppercase tracking-widest text-primary mb-2">Project Description</label>
+<textarea class="w-full bg-transparent border-0 border-b border-outline-variant focus:border-secondary focus:ring-0 text-primary px-0 py-3 transition-colors duration-300" placeholder="Briefly describe your objectives..." rows="4"></textarea>
+</div>
+<div class="flex justify-center pt-8">
+<button class="bg-primary text-on-primary px-16 py-5 rounded-md font-label text-sm uppercase tracking-widest hover:shadow-2xl transition-all duration-500 border-b-2 border-secondary" type="submit">
+                            Initiate Contact
+                        </button>
+</div>
+</form>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-slate-950 pt-20 pb-10">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 max-w-7xl mx-auto">
+<div class="md:col-span-1">
+<span class="text-xl font-headline text-white mb-4 block">Pyramis</span>
+<p class="text-slate-400 text-sm leading-relaxed mb-8">
+                    Redefining business consulting through Mediterranean insight and global precision.
+                </p>
+<div class="flex space-x-4">
+<span class="material-symbols-outlined text-amber-200 cursor-pointer hover:text-white" data-icon="public">public</span>
+<span class="material-symbols-outlined text-amber-200 cursor-pointer hover:text-white" data-icon="hub">hub</span>
+<span class="material-symbols-outlined text-amber-200 cursor-pointer hover:text-white" data-icon="verified">verified</span>
+</div>
+</div>
+<div>
+<h4 class="font-headline text-lg text-white mb-8">Quick Links</h4>
+<ul class="space-y-4">
+<li><a class="text-slate-400 hover:text-white text-sm transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="text-slate-400 hover:text-white text-sm transition-colors" href="#">Terms of Service</a></li>
+<li><a class="text-slate-400 hover:text-white text-sm transition-colors" href="#">LinkedIn</a></li>
+<li><a class="text-slate-400 hover:text-white text-sm transition-colors" href="#">Insights</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline text-lg text-white mb-8">Headquarters</h4>
+<address class="not-italic text-slate-400 text-sm leading-relaxed">
+                    Pyramis Plaza, Level 4<br/>
+                    Makarios Ave, Limassol<br/>
+                    Cyprus, CY-3030<br/>
+<span class="block mt-4 text-amber-200">+357 25 100 000</span>
+</address>
+</div>
+<div>
+<h4 class="font-headline text-lg text-white mb-8">Affiliations</h4>
+<div class="grid grid-cols-2 gap-4">
+<div class="h-12 bg-white/5 flex items-center justify-center grayscale hover:grayscale-0 transition-all opacity-40">
+<span class="text-[10px] text-white font-label">CY-TAX</span>
+</div>
+<div class="h-12 bg-white/5 flex items-center justify-center grayscale hover:grayscale-0 transition-all opacity-40">
+<span class="text-[10px] text-white font-label">INT-ACAD</span>
+</div>
+<div class="h-12 bg-white/5 flex items-center justify-center grayscale hover:grayscale-0 transition-all opacity-40">
+<span class="text-[10px] text-white font-label">EU-BIZ</span>
+</div>
+<div class="h-12 bg-white/5 flex items-center justify-center grayscale hover:grayscale-0 transition-all opacity-40">
+<span class="text-[10px] text-white font-label">MED-STRAT</span>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-20 pt-8 border-t border-white/5 max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-slate-500 text-xs">© 2024 Pyramis Consulting. All rights reserved.</p>
+<p class="text-slate-500 text-xs flex items-center gap-2">
+<span class="material-symbols-outlined text-[10px]" data-icon="location_on">location_on</span>
+                Limassol | Nicosia | Paphos
+            </p>
+</div>
+</footer>
+</body></html>

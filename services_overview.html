@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Services | Pyramis Consulting</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary-fixed-variant": "#2f486a",
+              "on-background": "#0e1d26",
+              "secondary-container": "#e1e1c9",
+              "surface-dim": "#ccdce9",
+              "on-primary-fixed": "#001c3a",
+              "tertiary-fixed-dim": "#76d6d5",
+              "surface-container-highest": "#d5e5f1",
+              "surface-container-lowest": "#ffffff",
+              "secondary-fixed": "#e4e4cc",
+              "background": "#f5faff",
+              "on-surface": "#0e1d26",
+              "outline-variant": "#c4c6cf",
+              "on-secondary": "#ffffff",
+              "on-tertiary-container": "#2c9494",
+              "tertiary": "#000707",
+              "surface-bright": "#f5faff",
+              "surface": "#f5faff",
+              "inverse-surface": "#23323c",
+              "error": "#ba1a1a",
+              "on-secondary-container": "#636451",
+              "primary-container": "#001f3f",
+              "primary-fixed-dim": "#afc8f0",
+              "tertiary-container": "#002323",
+              "outline": "#74777f",
+              "surface-container": "#e0f0fd",
+              "on-primary": "#ffffff",
+              "primary": "#000613",
+              "on-primary-container": "#6f88ad",
+              "tertiary-fixed": "#93f2f2",
+              "on-secondary-fixed-variant": "#474836",
+              "on-tertiary-fixed": "#002020",
+              "inverse-on-surface": "#e4f3ff",
+              "surface-container-low": "#e9f5ff",
+              "secondary-fixed-dim": "#c8c8b0",
+              "surface-tint": "#476083",
+              "secondary": "#5e604d",
+              "on-secondary-fixed": "#1b1d0e",
+              "on-error-container": "#93000a",
+              "on-surface-variant": "#43474e",
+              "error-container": "#ffdad6",
+              "surface-variant": "#d5e5f1",
+              "surface-container-high": "#daeaf7",
+              "on-tertiary-fixed-variant": "#004f4f",
+              "on-error": "#ffffff",
+              "inverse-primary": "#afc8f0",
+              "on-tertiary": "#ffffff",
+              "primary-fixed": "#d4e3ff"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "0.75rem", "xl": "1rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .pyramid-pattern {
+            background-image: linear-gradient(135deg, rgba(196, 198, 207, 0.05) 25%, transparent 25%), 
+                              linear-gradient(225deg, rgba(196, 198, 207, 0.05) 25%, transparent 25%);
+            background-size: 100px 100px;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body antialiased">
+<!-- Top Navigation -->
+<nav class="sticky top-0 z-50 w-full bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-bold tracking-tighter text-slate-900 dark:text-slate-50 font-headline">Pyramis</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-teal-600 dark:text-teal-400 font-bold border-b-2 border-teal-600 font-headline text-sm tracking-tight" href="#">Services</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors font-headline text-sm tracking-tight" href="#">Industries</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors font-headline text-sm tracking-tight" href="#">About</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors font-headline text-sm tracking-tight" href="#">Insights</a>
+<a class="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors font-headline text-sm tracking-tight" href="#">Resources</a>
+</div>
+<button class="bg-tertiary-container text-on-tertiary-fixed px-6 py-2 rounded-full font-medium hover:opacity-80 transition-all active:scale-95 duration-150">
+                Book a Consultation
+            </button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative bg-primary overflow-hidden py-24 md:py-32">
+<div class="absolute inset-0 pyramid-pattern opacity-20"></div>
+<div class="max-w-7xl mx-auto px-8 relative z-10 grid md:grid-cols-2 gap-12 items-center">
+<div>
+<h1 class="text-5xl md:text-7xl font-headline font-bold text-white tracking-tight leading-none mb-8">
+                        End-to-End <span class="text-on-tertiary-container">Consulting Services</span>
+</h1>
+<p class="text-lg md:text-xl text-on-primary-container max-w-xl leading-relaxed">
+                        We move beyond traditional advisory, embedding intellectual rigor and operational agility into your DNA. Our approach is defined by the architectural precision of the Pyramid—foundation, structure, and peak performance.
+                    </p>
+</div>
+<div class="hidden md:block">
+<div class="aspect-square bg-surface-container-low/10 rounded-xl overflow-hidden backdrop-blur-sm p-1">
+<img alt="Modern architectural structure" class="w-full h-full object-cover rounded-lg mix-blend-overlay grayscale opacity-60" data-alt="Abstract view of modern geometric office architecture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAKJyWNo0Iv0gaKTLG5jJVS5EkflrMbnzhp1DEhP1MFHAxb4hmiTPEPzxOduQDGXb3gzuNjIeTvXvr4y1SYqrRsJyuuZbtZxeZUdxlrFjx8NnavP7l7jiaMBxUOJ4dLx1Vb8faszC3zobM7EH4oDKQpvy4ZKolQ86QIdD3_exQEX0qovv8x-AnGZLHhsxUMeFnXgUlAyXRiStppMGW_3Y1p6WyAa6zVKv0Le1Qn5SbySa1DPbBikjsp-O4Rj1hJ0vN8ejXAb7ddcokV"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Brief Intro -->
+<section class="py-20 bg-surface">
+<div class="max-w-4xl mx-auto px-8 text-center">
+<span class="text-on-tertiary-container font-headline font-semibold tracking-widest text-xs uppercase mb-4 block">The Pyramis Methodology</span>
+<h2 class="text-3xl md:text-4xl font-headline font-bold mb-8 text-primary">Interdisciplinary Expertise, Integrated Impact.</h2>
+<p class="text-on-surface-variant text-lg leading-relaxed">
+                    Our consulting practice is built on the belief that isolated improvements are temporary. To achieve lasting success, strategy must be lived, operations must be digitalized, and culture must be aligned. We integrate these pillars into a singular, cohesive transformation journey.
+                </p>
+</div>
+</section>
+<!-- Services Pillars - Asymmetric Bento/Editorial Grid -->
+<section class="py-20 px-8 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Strategy & Growth -->
+<div class="md:col-span-8 bg-surface-container-low p-10 flex flex-col justify-between group hover:bg-surface-container-high transition-colors duration-500">
+<div>
+<span class="material-symbols-outlined text-4xl text-on-tertiary-container mb-6" data-icon="explore">explore</span>
+<h3 class="text-3xl font-headline font-bold text-primary mb-4">Strategy &amp; Growth</h3>
+<p class="text-on-surface-variant mb-8 max-w-xl">Defining the trajectory for market dominance. We help leaders navigate complex market shifts and identify whitespace for sustainable expansion.</p>
+<ul class="space-y-3 mb-10">
+<li class="flex items-center gap-3 text-sm font-medium text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-container"></span> Market Entry &amp; Competitive Positioning
+                            </li>
+<li class="flex items-center gap-3 text-sm font-medium text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-container"></span> Long-term Strategic Roadmap Design
+                            </li>
+<li class="flex items-center gap-3 text-sm font-medium text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-container"></span> M&amp;A Integration and Advisory
+                            </li>
+</ul>
+</div>
+<button class="flex items-center gap-2 text-on-tertiary-container font-headline font-bold text-sm hover:underline group-hover:translate-x-2 transition-transform">
+                        Discuss this area <span class="material-symbols-outlined text-base" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+<!-- Operations -->
+<div class="md:col-span-4 bg-surface-container-low p-10 flex flex-col justify-between hover:bg-surface-container-high transition-colors duration-500">
+<div>
+<span class="material-symbols-outlined text-4xl text-on-tertiary-container mb-6" data-icon="settings_suggest">settings_suggest</span>
+<h3 class="text-2xl font-headline font-bold text-primary mb-4">Operations &amp; Optimization</h3>
+<p class="text-on-surface-variant mb-6 text-sm">Lean methodologies applied to high-stakes environments for maximum output efficiency.</p>
+<ul class="space-y-2 mb-8 text-xs text-on-surface-variant font-medium">
+<li>• Supply Chain Resilience</li>
+<li>• Cost Structuring &amp; Efficiency</li>
+<li>• Process Mapping &amp; Lean Six Sigma</li>
+</ul>
+</div>
+<button class="flex items-center gap-2 text-on-tertiary-container font-headline font-bold text-sm hover:underline">
+                        Discuss this area <span class="material-symbols-outlined text-base" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+<!-- Digital & Tech -->
+<div class="md:col-span-4 bg-surface-container-low p-10 flex flex-col justify-between hover:bg-surface-container-high transition-colors duration-500">
+<div>
+<span class="material-symbols-outlined text-4xl text-on-tertiary-container mb-6" data-icon="terminal">terminal</span>
+<h3 class="text-2xl font-headline font-bold text-primary mb-4">Digital &amp; Technology</h3>
+<p class="text-on-surface-variant mb-6 text-sm">Translating complex technological capabilities into practical business value and competitive advantage.</p>
+<ul class="space-y-2 mb-8 text-xs text-on-surface-variant font-medium">
+<li>• Enterprise Tech Architecture</li>
+<li>• AI &amp; Data Strategy Deployment</li>
+<li>• Cyber Security Resilience</li>
+</ul>
+</div>
+<button class="flex items-center gap-2 text-on-tertiary-container font-headline font-bold text-sm hover:underline">
+                        Discuss this area <span class="material-symbols-outlined text-base" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+<!-- Financial -->
+<div class="md:col-span-8 bg-surface-container-low p-10 flex flex-col justify-between group hover:bg-surface-container-high transition-colors duration-500">
+<div>
+<span class="material-symbols-outlined text-4xl text-on-tertiary-container mb-6" data-icon="payments">payments</span>
+<h3 class="text-3xl font-headline font-bold text-primary mb-4">Financial &amp; Performance Management</h3>
+<p class="text-on-surface-variant mb-8 max-w-xl">Deep-dive analytics to protect margins and fuel investment. We bring transparency to the most complex balance sheets.</p>
+<div class="grid md:grid-cols-2 gap-4 mb-10">
+<ul class="space-y-3">
+<li class="flex items-center gap-3 text-sm font-medium text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-container"></span> Capital Allocation Strategy
+                                </li>
+<li class="flex items-center gap-3 text-sm font-medium text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-container"></span> Performance Dashboards &amp; KPIs
+                                </li>
+</ul>
+<ul class="space-y-3">
+<li class="flex items-center gap-3 text-sm font-medium text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-container"></span> Working Capital Optimization
+                                </li>
+<li class="flex items-center gap-3 text-sm font-medium text-on-surface">
+<span class="w-1.5 h-1.5 rounded-full bg-on-tertiary-container"></span> Financial Risk Mitigation
+                                </li>
+</ul>
+</div>
+</div>
+<button class="flex items-center gap-2 text-on-tertiary-container font-headline font-bold text-sm hover:underline group-hover:translate-x-2 transition-transform">
+                        Discuss this area <span class="material-symbols-outlined text-base" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+<!-- People & Org -->
+<div class="md:col-span-6 bg-surface-container-low p-10 flex flex-col justify-between hover:bg-surface-container-high transition-colors duration-500">
+<div class="flex-1">
+<span class="material-symbols-outlined text-4xl text-on-tertiary-container mb-6" data-icon="groups">groups</span>
+<h3 class="text-2xl font-headline font-bold text-primary mb-4">People &amp; Organization</h3>
+<p class="text-on-surface-variant mb-6">Designing organizational structures that empower human talent. We align your culture with your strategic ambitions.</p>
+<ul class="space-y-3 mb-8 text-sm text-on-surface font-medium">
+<li>• Leadership Succession Planning</li>
+<li>• Talent Engine Optimization</li>
+<li>• Organizational Design</li>
+</ul>
+</div>
+<button class="flex items-center gap-2 text-on-tertiary-container font-headline font-bold text-sm hover:underline">
+                        Discuss this area <span class="material-symbols-outlined text-base" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+<!-- Change & Transformation -->
+<div class="md:col-span-6 bg-surface-container-low p-10 flex flex-col justify-between hover:bg-surface-container-high transition-colors duration-500">
+<div class="flex-1">
+<span class="material-symbols-outlined text-4xl text-on-tertiary-container mb-6" data-icon="dynamic_form">dynamic_form</span>
+<h3 class="text-2xl font-headline font-bold text-primary mb-4">Change &amp; Transformation</h3>
+<p class="text-on-surface-variant mb-6">Navigating the human element of change. We ensure that transformation isn't just a memo, but a cultural shift.</p>
+<ul class="space-y-3 mb-8 text-sm text-on-surface font-medium">
+<li>• Change Management Frameworks</li>
+<li>• Cultural Integration (Post-M&amp;A)</li>
+<li>• Digital Transformation Adoption</li>
+</ul>
+</div>
+<button class="flex items-center gap-2 text-on-tertiary-container font-headline font-bold text-sm hover:underline">
+                        Discuss this area <span class="material-symbols-outlined text-base" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Engagement Models Section -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="mb-16">
+<h2 class="text-4xl font-headline font-bold text-primary mb-4">Tailored Engagement Models</h2>
+<p class="text-on-surface-variant max-w-2xl leading-relaxed">Flexibility is core to our delivery. We engage in the manner that best suits your organizational speed and the complexity of the challenge.</p>
+</div>
+<div class="grid md:grid-cols-3 gap-8">
+<!-- Project-based -->
+<div class="bg-surface p-10 rounded-xl hover:shadow-2xl hover:shadow-primary/5 transition-all duration-300">
+<h4 class="text-xl font-headline font-bold mb-4 text-primary">Project-based</h4>
+<p class="text-sm text-on-surface-variant mb-8 h-12">Focused interventions for specific, high-impact challenges with defined timelines and outcomes.</p>
+<div class="border-t border-outline-variant/30 pt-8">
+<p class="text-xs uppercase font-bold tracking-widest text-on-tertiary-container mb-4">Who it's for</p>
+<p class="text-sm font-medium mb-6">Companies facing a singular bottleneck or a defined market entry opportunity.</p>
+<ul class="space-y-2 text-sm text-on-surface-variant">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-sm mt-0.5 text-on-tertiary-container" data-icon="check_circle">check_circle</span>
+                                    Clear Deliverables
+                                </li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-sm mt-0.5 text-on-tertiary-container" data-icon="check_circle">check_circle</span>
+                                    Dedicated Tiger Team
+                                </li>
+</ul>
+</div>
+</div>
+<!-- Retainer -->
+<div class="bg-primary text-white p-10 rounded-xl hover:shadow-2xl hover:shadow-primary/20 transition-all duration-300">
+<h4 class="text-xl font-headline font-bold mb-4 text-white">Retainer</h4>
+<p class="text-sm text-on-primary-container mb-8 h-12">Continuous strategic support and on-demand advisory for rapid-growth environments.</p>
+<div class="border-t border-white/10 pt-8">
+<p class="text-xs uppercase font-bold tracking-widest text-on-tertiary-container mb-4">Who it's for</p>
+<p class="text-sm font-medium mb-6">Established firms undergoing continuous evolution or long-term digital pivots.</p>
+<ul class="space-y-2 text-sm text-on-primary-container">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-sm mt-0.5 text-on-tertiary-container" data-icon="check_circle">check_circle</span>
+                                    Priority Accessibility
+                                </li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-sm mt-0.5 text-on-tertiary-container" data-icon="check_circle">check_circle</span>
+                                    Embedded Strategic Support
+                                </li>
+</ul>
+</div>
+</div>
+<!-- Advisory Board -->
+<div class="bg-surface p-10 rounded-xl hover:shadow-2xl hover:shadow-primary/5 transition-all duration-300">
+<h4 class="text-xl font-headline font-bold mb-4 text-primary">Advisory Board</h4>
+<p class="text-sm text-on-surface-variant mb-8 h-12">High-level fractional leadership to guide governance, risk, and long-term vision.</p>
+<div class="border-t border-outline-variant/30 pt-8">
+<p class="text-xs uppercase font-bold tracking-widest text-on-tertiary-container mb-4">Who it's for</p>
+<p class="text-sm font-medium mb-6">CEOs and Founders seeking diverse, external intellectual capital for quarterly steering.</p>
+<ul class="space-y-2 text-sm text-on-surface-variant">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-sm mt-0.5 text-on-tertiary-container" data-icon="check_circle">check_circle</span>
+                                    Fractional C-Suite Input
+                                </li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-sm mt-0.5 text-on-tertiary-container" data-icon="check_circle">check_circle</span>
+                                    Governance Oversight
+                                </li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="py-24 bg-white relative overflow-hidden">
+<div class="absolute -right-20 -bottom-20 w-96 h-96 bg-surface-container-low rounded-full blur-3xl opacity-50"></div>
+<div class="max-w-7xl mx-auto px-8 relative z-10 text-center">
+<h2 class="text-4xl md:text-5xl font-headline font-bold text-primary mb-8">Ready to architect your <br/> organization's next era?</h2>
+<div class="flex flex-col md:flex-row gap-4 justify-center">
+<button class="bg-primary text-white px-10 py-4 rounded-full font-headline font-bold hover:opacity-90 transition-all text-lg">
+                        Book a Strategy Session
+                    </button>
+<button class="border border-outline px-10 py-4 rounded-full font-headline font-bold hover:bg-surface-container-low transition-all text-lg">
+                        Download Capabilities Deck
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 dark:bg-slate-900 w-full rounded-none border-t border-slate-200 dark:border-slate-800">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 py-16 max-w-7xl mx-auto">
+<div class="col-span-1">
+<div class="text-xl font-bold tracking-tighter text-slate-900 dark:text-slate-50 font-headline mb-6">Pyramis</div>
+<p class="text-slate-500 text-sm leading-relaxed mb-6 font-body">The architectural vanguard of corporate strategy. Quietly empowering the world's most ambitious leaders.</p>
+<div class="flex gap-4">
+<a class="text-slate-400 hover:text-teal-600 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="share">share</span>
+</a>
+<a class="text-slate-400 hover:text-teal-600 transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="public">public</span>
+</a>
+</div>
+</div>
+<div>
+<h5 class="font-headline font-bold text-slate-900 dark:text-slate-50 text-sm mb-6 uppercase tracking-widest">Solutions</h5>
+<ul class="space-y-4 font-body text-sm">
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-slate-900 hover:underline transition-all" href="#">Strategy</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-slate-900 hover:underline transition-all" href="#">Operations</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-slate-900 hover:underline transition-all" href="#">Digital</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-slate-900 hover:underline transition-all" href="#">Finance</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-headline font-bold text-slate-900 dark:text-slate-50 text-sm mb-6 uppercase tracking-widest">Company</h5>
+<ul class="space-y-4 font-body text-sm">
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-slate-900 hover:underline transition-all" href="#">About Us</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-slate-900 hover:underline transition-all" href="#">Industries</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-slate-900 hover:underline transition-all" href="#">Insights</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-slate-900 hover:underline transition-all" href="#">Careers</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-headline font-bold text-slate-900 dark:text-slate-50 text-sm mb-6 uppercase tracking-widest">Global Offices</h5>
+<ul class="space-y-4 font-body text-sm text-slate-500">
+<li>London, UK</li>
+<li>New York, US</li>
+<li>Singapore</li>
+<li>Dubai, UAE</li>
+</ul>
+</div>
+</div>
+<div class="px-8 py-8 max-w-7xl mx-auto border-t border-slate-200/50 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-slate-500 text-xs">© 2024 Pyramis Consulting. All rights reserved.</p>
+<div class="flex gap-8 text-xs font-medium">
+<a class="text-slate-500 hover:text-slate-900" href="#">Privacy Policy</a>
+<a class="text-slate-500 hover:text-slate-900" href="#">Terms of Service</a>
+<a class="text-slate-500 hover:text-slate-900" href="#">Cookie Settings</a>
+</div>
+</div>
+</footer>
+</body></html>

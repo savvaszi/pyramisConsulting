@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Pyramis | Architectural Consulting</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "inverse-primary": "#afc8f0",
+              "primary-fixed": "#d4e3ff",
+              "inverse-surface": "#23323c",
+              "on-primary-container": "#6f88ad",
+              "tertiary-fixed": "#93f2f2",
+              "outline": "#74777f",
+              "background": "#f5faff",
+              "on-secondary-fixed": "#1b1d0e",
+              "on-surface-variant": "#43474e",
+              "secondary-fixed": "#e4e4cc",
+              "on-primary-fixed-variant": "#2f486a",
+              "on-error": "#ffffff",
+              "secondary": "#5e604d",
+              "outline-variant": "#c4c6cf",
+              "on-secondary-container": "#636451",
+              "on-primary-fixed": "#001c3a",
+              "surface-container-highest": "#d5e5f1",
+              "tertiary-fixed-dim": "#76d6d5",
+              "on-primary": "#ffffff",
+              "on-secondary": "#ffffff",
+              "on-tertiary-container": "#2c9494",
+              "surface-container-lowest": "#ffffff",
+              "surface-container": "#e0f0fd",
+              "on-tertiary": "#ffffff",
+              "surface": "#f5faff",
+              "on-error-container": "#93000a",
+              "inverse-on-surface": "#e4f3ff",
+              "primary-fixed-dim": "#afc8f0",
+              "on-tertiary-fixed": "#002020",
+              "tertiary": "#000707",
+              "secondary-container": "#e1e1c9",
+              "error": "#ba1a1a",
+              "tertiary-container": "#002323",
+              "primary-container": "#001f3f",
+              "surface-dim": "#ccdce9",
+              "surface-container-high": "#daeaf7",
+              "secondary-fixed-dim": "#c8c8b0",
+              "surface-tint": "#476083",
+              "surface-container-low": "#e9f5ff",
+              "primary": "#000613",
+              "on-secondary-fixed-variant": "#474836",
+              "on-surface": "#0e1d26",
+              "on-background": "#0e1d26",
+              "on-tertiary-fixed-variant": "#004f4f",
+              "error-container": "#ffdad6",
+              "surface-bright": "#f5faff",
+              "surface-variant": "#d5e5f1"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Space Grotesk', sans-serif; }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-tertiary-fixed selection:text-on-tertiary-fixed">
+<!-- TopNavBar (Shared Component) -->
+<nav class="sticky top-0 z-50 w-full bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl">
+<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-bold tracking-tighter text-slate-900 dark:text-slate-50 font-headline">Pyramis</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-['Space_Grotesk'] text-sm tracking-tight font-medium text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors" href="#">Services</a>
+<a class="font-['Space_Grotesk'] text-sm tracking-tight font-medium text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors" href="#">Industries</a>
+<a class="font-['Space_Grotesk'] text-sm tracking-tight font-medium text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors" href="#">About</a>
+<a class="font-['Space_Grotesk'] text-sm tracking-tight font-medium text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors" href="#">Insights</a>
+<a class="font-['Space_Grotesk'] text-sm tracking-tight font-medium text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors" href="#">Resources</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="px-5 py-2.5 bg-tertiary-container text-white text-sm font-medium rounded-lg hover:opacity-80 transition-opacity active:scale-95 duration-150 ease-in-out">
+                    Book a Consultation
+                </button>
+</div>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative pt-24 pb-16 px-8 max-w-7xl mx-auto overflow-hidden">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
+<div class="lg:col-span-8">
+<span class="inline-block py-1 px-3 bg-surface-container-high text-on-surface-variant text-xs font-semibold tracking-widest rounded uppercase mb-6">Connect with Authority</span>
+<h1 class="text-5xl md:text-7xl font-bold tracking-tighter text-primary leading-[0.9] mb-8">
+                        The dialogue starts <br/> <span class="text-on-primary-container">at the summit.</span>
+</h1>
+<p class="text-xl text-on-surface-variant max-w-2xl font-body leading-relaxed">
+                        Precision-driven strategy requires a shared vision. Reach out to our partners to discuss how Pyramis can architect your organization's next phase of growth.
+                    </p>
+</div>
+<div class="lg:col-span-4 hidden lg:block">
+<!-- Subtle Pyramid Graphic Accent -->
+<div class="relative w-full aspect-square opacity-10">
+<svg class="w-full h-full text-primary fill-current" viewbox="0 0 100 100">
+<path d="M50 10 L90 90 L10 90 Z"></path>
+</svg>
+</div>
+</div>
+</div>
+</section>
+<!-- Main Contact Canvas -->
+<section class="px-8 pb-24 max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-16">
+<!-- Contact Form (2/3 Split) -->
+<div class="lg:col-span-2 bg-surface-container-lowest p-8 md:p-12 rounded-xl shadow-sm">
+<form action="#" class="space-y-8">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-wider text-outline">Full Name</label>
+<input class="w-full bg-surface-container-highest border-none rounded p-4 focus:ring-2 focus:ring-tertiary-container transition-all" placeholder="Alexandre Dumas" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-wider text-outline">Company</label>
+<input class="w-full bg-surface-container-highest border-none rounded p-4 focus:ring-2 focus:ring-tertiary-container transition-all" placeholder="Global Enterprises Ltd." type="text"/>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-wider text-outline">Email Address</label>
+<input class="w-full bg-surface-container-highest border-none rounded p-4 focus:ring-2 focus:ring-tertiary-container transition-all" placeholder="a.dumas@global.com" type="email"/>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-wider text-outline">Phone Number</label>
+<input class="w-full bg-surface-container-highest border-none rounded p-4 focus:ring-2 focus:ring-tertiary-container transition-all" placeholder="+357 22 000 000" type="tel"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-wider text-outline">Role</label>
+<input class="w-full bg-surface-container-highest border-none rounded p-4 focus:ring-2 focus:ring-tertiary-container transition-all" placeholder="Chief Strategy Officer" type="text"/>
+</div>
+<div class="space-y-4">
+<label class="text-xs font-bold uppercase tracking-wider text-outline">Area of Interest</label>
+<div class="flex flex-wrap gap-3">
+<label class="cursor-pointer group">
+<input class="hidden peer" type="checkbox"/>
+<span class="px-4 py-2 bg-surface-container-low text-sm font-medium rounded-full peer-checked:bg-tertiary-container peer-checked:text-white transition-all">Digital Transformation</span>
+</label>
+<label class="cursor-pointer group">
+<input class="hidden peer" type="checkbox"/>
+<span class="px-4 py-2 bg-surface-container-low text-sm font-medium rounded-full peer-checked:bg-tertiary-container peer-checked:text-white transition-all">Risk Advisory</span>
+</label>
+<label class="cursor-pointer group">
+<input class="hidden peer" type="checkbox"/>
+<span class="px-4 py-2 bg-surface-container-low text-sm font-medium rounded-full peer-checked:bg-tertiary-container peer-checked:text-white transition-all">Operational Strategy</span>
+</label>
+<label class="cursor-pointer group">
+<input class="hidden peer" type="checkbox"/>
+<span class="px-4 py-2 bg-surface-container-low text-sm font-medium rounded-full peer-checked:bg-tertiary-container peer-checked:text-white transition-all">M&amp;A Consulting</span>
+</label>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-wider text-outline">Message</label>
+<textarea class="w-full bg-surface-container-highest border-none rounded p-4 focus:ring-2 focus:ring-tertiary-container transition-all" placeholder="Tell us about your objectives..." rows="5"></textarea>
+</div>
+<button class="w-full py-5 bg-tertiary-container text-white font-headline font-bold tracking-tight rounded-lg hover:opacity-90 active:scale-[0.98] transition-all" type="submit">
+                            Submit Inquiry
+                        </button>
+</form>
+</div>
+<!-- Sidebar Details (1/3 Split) -->
+<div class="space-y-12">
+<!-- Office Details -->
+<div class="bg-surface-container-low p-8 rounded-xl space-y-8">
+<div>
+<h3 class="text-xl font-bold mb-4">Cyprus Headquarters</h3>
+<p class="text-on-surface-variant leading-relaxed">
+                                42 Makarios Avenue,<br/>
+                                Level 5, Pyramis Tower,<br/>
+                                Nicosia 1065, Cyprus
+                            </p>
+</div>
+<div class="space-y-4">
+<div class="flex items-center gap-4 text-on-surface">
+<span class="material-symbols-outlined text-on-primary-container">call</span>
+<span class="text-sm font-medium">+357 22 888 100</span>
+</div>
+<div class="flex items-center gap-4 text-on-surface">
+<span class="material-symbols-outlined text-on-primary-container">mail</span>
+<span class="text-sm font-medium">partners@pyramis.com</span>
+</div>
+</div>
+</div>
+<!-- Map Placeholder -->
+<div class="relative w-full aspect-video bg-surface-container-high rounded-xl overflow-hidden group">
+<img alt="Minimalist map of Nicosia" class="w-full h-full object-cover grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700" data-alt="Minimalist grayscale map of Nicosia Cyprus showing business district" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD65mJq1NJG9WXDDvi5JY4Cs0OBijxtMoozesLeIyO2ZklLXgDR4HcUFc-By3wBnArtTw8bRu1Lm3pGIXMB7CFJqDklZ6K9Tu3W7bDfmi66NQmYpZfFuVLpi8uv1Zr-8EsjuSIoRpOZ6Rf0ORhD8yWsP96BId4JayJFtMyi-mNQZojV94NfPF7_DMiTEqAgFEZTQH-9CH8GeU7kAsMJIqFYth4drpDF0vpV2xvKP8PzgkUSHulzpQ8EtwDf5q1qrRru8nizGs3rdcBd"/>
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-4 h-4 bg-tertiary rounded-full animate-ping"></div>
+<div class="w-4 h-4 bg-tertiary rounded-full absolute"></div>
+</div>
+<div class="absolute bottom-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded text-[10px] font-bold tracking-widest uppercase">
+                            View on Maps
+                        </div>
+</div>
+<!-- Trust Indicators -->
+<div class="pt-4">
+<h4 class="text-xs font-bold uppercase tracking-widest text-outline mb-6">Global Availability</h4>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-surface-container-low p-4 rounded text-center">
+<div class="text-lg font-bold font-headline">LON</div>
+<div class="text-[10px] text-on-surface-variant uppercase">London Office</div>
+</div>
+<div class="bg-surface-container-low p-4 rounded text-center">
+<div class="text-lg font-bold font-headline">DXB</div>
+<div class="text-[10px] text-on-surface-variant uppercase">Dubai Hub</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="bg-surface-container-low py-24 px-8">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+<div class="lg:col-span-4">
+<h2 class="text-4xl font-bold tracking-tight mb-6">Common Inquiries</h2>
+<p class="text-on-surface-variant font-body">Clear expectations are the foundation of excellence. Here is how we initiate partnerships.</p>
+</div>
+<div class="lg:col-span-8 space-y-1">
+<!-- FAQ Item 1 -->
+<div class="group border-b border-outline-variant/30 py-8">
+<div class="flex justify-between items-center cursor-pointer">
+<h3 class="text-lg font-semibold text-primary">How quickly can we start a new engagement?</h3>
+<span class="material-symbols-outlined text-on-primary-container transition-transform group-hover:rotate-45">add</span>
+</div>
+<div class="mt-4 max-w-2xl text-on-surface-variant text-sm leading-relaxed hidden group-hover:block transition-all">
+                                We prioritize quality over speed. Most strategic audits begin within 14 business days of contract finalization to ensure the proper team of experts is assembled for your specific vertical.
+                            </div>
+</div>
+<!-- FAQ Item 2 -->
+<div class="group border-b border-outline-variant/30 py-8">
+<div class="flex justify-between items-center cursor-pointer">
+<h3 class="text-lg font-semibold text-primary">What is the typical timeline for a strategy roadmap?</h3>
+<span class="material-symbols-outlined text-on-primary-container transition-transform group-hover:rotate-45">add</span>
+</div>
+<div class="mt-4 max-w-2xl text-on-surface-variant text-sm leading-relaxed hidden group-hover:block transition-all">
+                                A comprehensive roadmap usually spans 8 to 12 weeks, depending on organizational complexity. This includes discovery, diagnostic analysis, and executive synthesis phases.
+                            </div>
+</div>
+<!-- FAQ Item 3 -->
+<div class="group border-b border-outline-variant/30 py-8">
+<div class="flex justify-between items-center cursor-pointer">
+<h3 class="text-lg font-semibold text-primary">How does Pyramis structure its pricing?</h3>
+<span class="material-symbols-outlined text-on-primary-container transition-transform group-hover:rotate-45">add</span>
+</div>
+<div class="mt-4 max-w-2xl text-on-surface-variant text-sm leading-relaxed hidden group-hover:block transition-all">
+                                We utilize a value-based fee structure for advisory roles and retainer models for ongoing operational support. Every engagement is custom-quoted based on the anticipated impact and scale of the transformation.
+                            </div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="w-full rounded-none border-t border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-900">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 py-16 max-w-7xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="text-xl font-bold tracking-tighter text-slate-900 dark:text-slate-50 mb-6 font-headline">Pyramis</div>
+<p class="font-['Inter'] text-sm leading-relaxed text-slate-500 dark:text-slate-400">
+                    Architecting institutional authority through data-driven precision and strategic vision.
+                </p>
+</div>
+<div class="space-y-4">
+<h4 class="text-xs font-bold uppercase tracking-widest text-slate-900 dark:text-slate-50">Firm</h4>
+<div class="flex flex-col gap-2">
+<a class="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 text-sm transition-all hover:underline" href="#">About</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 text-sm transition-all hover:underline" href="#">Services</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 text-sm transition-all hover:underline" href="#">Industries</a>
+</div>
+</div>
+<div class="space-y-4">
+<h4 class="text-xs font-bold uppercase tracking-widest text-slate-900 dark:text-slate-50">Knowledge</h4>
+<div class="flex flex-col gap-2">
+<a class="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 text-sm transition-all hover:underline" href="#">Insights</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 text-sm transition-all hover:underline" href="#">Resources</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 text-sm transition-all hover:underline text-teal-600 dark:text-teal-400 font-semibold" href="#">Contact</a>
+</div>
+</div>
+<div class="space-y-4">
+<h4 class="text-xs font-bold uppercase tracking-widest text-slate-900 dark:text-slate-50">Legal</h4>
+<div class="flex flex-col gap-2">
+<a class="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 text-sm transition-all hover:underline" href="#">Privacy Policy</a>
+<a class="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-200 text-sm transition-all hover:underline" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+<div class="px-8 py-8 max-w-7xl mx-auto border-t border-slate-200 dark:border-slate-800">
+<p class="font-['Inter'] text-sm leading-relaxed text-slate-500 dark:text-slate-400">© 2024 Pyramis Consulting. All rights reserved.</p>
+</div>
+</footer>
+</body></html>

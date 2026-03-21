@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-fixed": "#93f2f2",
+              "on-secondary-fixed-variant": "#474836",
+              "on-tertiary-fixed": "#002020",
+              "inverse-on-surface": "#e4f3ff",
+              "surface-container-low": "#e9f5ff",
+              "secondary-fixed-dim": "#c8c8b0",
+              "surface-tint": "#476083",
+              "secondary": "#5e604d",
+              "on-secondary-fixed": "#1b1d0e",
+              "on-error-container": "#93000a",
+              "on-surface-variant": "#43474e",
+              "surface-variant": "#d5e5f1",
+              "error-container": "#ffdad6",
+              "surface-container-high": "#daeaf7",
+              "on-tertiary-fixed-variant": "#004f4f",
+              "on-error": "#ffffff",
+              "primary-fixed": "#d4e3ff",
+              "on-tertiary": "#ffffff",
+              "inverse-primary": "#afc8f0",
+              "on-primary-fixed-variant": "#2f486a",
+              "on-background": "#0e1d26",
+              "surface-dim": "#ccdce9",
+              "secondary-container": "#e1e1c9",
+              "on-primary-fixed": "#001c3a",
+              "tertiary-fixed-dim": "#76d6d5",
+              "surface-container-highest": "#d5e5f1",
+              "surface-container-lowest": "#ffffff",
+              "secondary-fixed": "#e4e4cc",
+              "background": "#f5faff",
+              "on-surface": "#0e1d26",
+              "outline-variant": "#c4c6cf",
+              "on-secondary": "#ffffff",
+              "tertiary": "#000707",
+              "surface-bright": "#f5faff",
+              "on-tertiary-container": "#2c9494",
+              "surface": "#f5faff",
+              "inverse-surface": "#23323c",
+              "on-secondary-container": "#636451",
+              "error": "#ba1a1a",
+              "primary-container": "#001f3f",
+              "primary-fixed-dim": "#afc8f0",
+              "tertiary-container": "#002323",
+              "surface-container": "#e0f0fd",
+              "outline": "#74777f",
+              "primary": "#000613",
+              "on-primary": "#ffffff",
+              "on-primary-container": "#6f88ad"
+            },
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Space Grotesk', sans-serif; }
+        .pyramid-accent {
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-tertiary-container selection:text-on-tertiary-container">
+<!-- Top Navigation Shell -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-xl">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto">
+<div class="text-xl font-bold tracking-tighter text-slate-900">Pyramis Consulting</div>
+<div class="hidden md:flex gap-8 font-['Space_Grotesk'] font-medium tracking-tight">
+<a class="text-slate-600 hover:text-slate-900 transition-colors" href="#">Services</a>
+<a class="text-slate-600 hover:text-slate-900 transition-colors" href="#">Industries</a>
+<a class="text-slate-600 hover:text-slate-900 transition-colors" href="#">About</a>
+</div>
+<div class="flex items-center gap-6">
+<span class="material-symbols-outlined text-slate-600 cursor-pointer">search</span>
+<button class="bg-tertiary-container text-on-tertiary-fixed px-6 py-2 rounded font-medium transition-transform active:scale-[0.99] hover:opacity-90">
+                    Book a Consultation
+                </button>
+</div>
+</div>
+<div class="bg-slate-100 h-px w-full"></div>
+</nav>
+<main class="pt-32 pb-24">
+<!-- Editorial Header Section -->
+<header class="max-w-screen-2xl mx-auto px-8 mb-16">
+<div class="flex flex-col md:flex-row gap-12 items-end">
+<div class="md:w-2/3">
+<div class="inline-block px-3 py-1 bg-surface-container-high text-on-primary-container text-xs font-bold tracking-widest uppercase mb-6 rounded-sm">
+                        Strategy
+                    </div>
+<h1 class="text-5xl md:text-7xl font-bold text-primary leading-[1.1] tracking-tight mb-8">
+                        Navigating Global Resilience: Why Full-Spectrum Advisory is the New Standard
+                    </h1>
+<p class="text-xl md:text-2xl text-on-surface-variant font-light leading-relaxed max-w-2xl">
+                        How mid-market enterprises are rethinking growth through integrated strategy and operations.
+                    </p>
+</div>
+<div class="md:w-1/3 pb-2">
+<div class="flex items-center gap-4 border-l border-outline-variant pl-6 py-2">
+<img alt="Marcus Thorne Profile" class="w-16 h-16 rounded-full object-cover grayscale brightness-90" data-alt="Professional headshot of a male consultant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVoe2Ior02ecvW_Q7l8VFTrx7XiEUhXS_z8PifldAXho7a5suQnazWOw0nHSa7LvhLDs7r-aBqcODtpI4sTNnvavYaDyEzj3PuZs9Ho-HIEb52vyxYzpo-l2KswLcg3QmxSG0k41rf-LiRvDa4TZF4-XsPuNY2k_9qQEdmtFCwp0TH30CWufAveZkL5kCBWqbl4fnn9Qio2LjugsFO2zqZ8EH2Q3TES8cFfLxbXuUmzj4Ex6CbJXWdK4s2fvvvycryuR777IsTolpA"/>
+<div>
+<p class="font-bold text-primary">Marcus Thorne</p>
+<p class="text-sm text-on-surface-variant">Managing Director</p>
+<p class="text-xs text-outline mt-1 uppercase tracking-tighter">October 24, 2024</p>
+</div>
+</div>
+</div>
+</div>
+</header>
+<!-- Featured Image with Architectural Asymmetry -->
+<section class="max-w-screen-2xl mx-auto px-8 mb-24 relative">
+<div class="w-full aspect-[21/9] rounded-xl overflow-hidden bg-primary relative">
+<img alt="Architectural Geometry" class="w-full h-full object-cover mix-blend-overlay opacity-60" data-alt="Modern blue-toned glass skyscraper architecture details" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfIr_PTKBnxf4FQYrdYIan520_s53zgeZbolyJrvX6Y1043s4U0jRfnndSZxtbxdYSDeKmAYX-Lzbv3PJWpzeqHe4LdxJFTJjWQbtTiCutN0BXNmK4ctP9oP3ByuszuE645OeJjwUioQxMx30PFj6iR8xhgBC6Ol3wmyhURpwLVfnv17X_P8E7jUqHMi4iW5ef01dCrq_0-BDnFAncQSoe86hx8pSI749pA7UWa8UgvkOdT8Wcsq2DP3Ss2IWu34HIWorDxe_GjaJE"/>
+<div class="absolute inset-0 bg-gradient-to-tr from-primary via-transparent to-transparent opacity-40"></div>
+<!-- Signature Accent Pyramid Graphic -->
+<div class="absolute bottom-[-10%] right-[-5%] w-96 h-96 pyramid-accent bg-white opacity-[0.03]"></div>
+</div>
+</section>
+<!-- Main Content Layout -->
+<div class="max-w-screen-2xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-16">
+<!-- Sidebar: Share & Reading Progress (Sticky) -->
+<aside class="hidden lg:block lg:col-span-1">
+<div class="sticky top-32 flex flex-col items-center gap-8">
+<span class="text-[10px] font-bold uppercase tracking-[0.2em] [writing-mode:vertical-lr] text-outline">Share</span>
+<div class="flex flex-col gap-4">
+<button class="w-10 h-10 flex items-center justify-center rounded-full bg-surface-container hover:bg-surface-container-high transition-colors text-on-surface">
+<span class="material-symbols-outlined text-xl">share</span>
+</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-full bg-surface-container hover:bg-surface-container-high transition-colors text-on-surface">
+<span class="material-symbols-outlined text-xl">bookmark</span>
+</button>
+<button class="w-10 h-10 flex items-center justify-center rounded-full bg-surface-container hover:bg-surface-container-high transition-colors text-on-surface">
+<span class="material-symbols-outlined text-xl">link</span>
+</button>
+</div>
+</div>
+</aside>
+<!-- Article Content -->
+<article class="lg:col-span-7 space-y-12">
+<div class="prose prose-lg max-w-none text-on-surface leading-relaxed">
+<p class="text-xl font-medium mb-8 first-letter:text-7xl first-letter:font-bold first-letter:mr-3 first-letter:float-left first-letter:text-primary">
+                        The era of siloed consulting is over. As global markets transition from a period of relative stability into a landscape defined by rapid volatility, the traditional separation between strategy and execution has become a liability for mid-market enterprises.
+                    </p>
+<h2 class="text-3xl font-bold text-primary mt-16 mb-6">Beyond the Strategic Void</h2>
+<p class="mb-6">
+                        In many traditional advisory models, strategies are developed in a vacuum—beautifully crafted decks that fall apart the moment they encounter the friction of operational reality. Full-spectrum advisory bridges this gap by integrating tactical expertise directly into the conceptual phase. 
+                    </p>
+<div class="my-16 bg-surface-container-low border-l-4 border-tertiary-container p-12 italic relative overflow-hidden">
+<span class="material-symbols-outlined absolute -top-4 -left-4 text-9xl opacity-[0.05] text-primary">format_quote</span>
+<p class="text-2xl md:text-3xl font-headline font-medium text-primary leading-tight relative z-10">
+                            "Resilience isn't just about having a backup plan; it's about building an infrastructure that views change as a catalyst for value creation."
+                        </p>
+</div>
+<h2 class="text-3xl font-bold text-primary mt-16 mb-6">Actionable Takeaways for Q4</h2>
+<p class="mb-8">To navigate the upcoming fiscal landscape, leadership teams should prioritize three fundamental pillars of integrated operations:</p>
+<ul class="space-y-6 list-none pl-0">
+<li class="flex items-start gap-4 p-6 bg-surface-container-lowest rounded-lg">
+<span class="material-symbols-outlined text-on-tertiary-container">check_circle</span>
+<div>
+<strong class="text-primary block text-lg mb-1">Dynamic Resource Mapping</strong>
+<p class="text-on-surface-variant">Move away from static annual budgets towards 90-day liquidity and talent sprints that align with real-time market shifts.</p>
+</div>
+</li>
+<li class="flex items-start gap-4 p-6 bg-surface-container-lowest rounded-lg">
+<span class="material-symbols-outlined text-on-tertiary-container">check_circle</span>
+<div>
+<strong class="text-primary block text-lg mb-1">Cross-Functional Synthesis</strong>
+<p class="text-on-surface-variant">Dissolve departmental silos by creating "Value Streams"—dedicated teams focused on specific customer outcomes rather than functions.</p>
+</div>
+</li>
+<li class="flex items-start gap-4 p-6 bg-surface-container-lowest rounded-lg">
+<span class="material-symbols-outlined text-on-tertiary-container">check_circle</span>
+<div>
+<strong class="text-primary block text-lg mb-1">Algorithmic Risk Assessment</strong>
+<p class="text-on-surface-variant">Integrate predictive analytics into daily operational reporting to identify supply chain vulnerabilities before they materialize.</p>
+</div>
+</li>
+</ul>
+<h2 class="text-3xl font-bold text-primary mt-16 mb-6">Conclusion</h2>
+<p>
+                        The firms that thrive in the next decade will not be those with the most comprehensive static plans, but those with the highest "Integrated Intelligence"—the ability to sense a market shift and reconfigure their entire operational stack in tandem.
+                    </p>
+</div>
+<!-- Author Bio Box -->
+<div class="mt-20 p-8 bg-surface-container-low rounded-xl flex flex-col md:flex-row gap-8 items-center border border-outline-variant/10">
+<img alt="Marcus Thorne" class="w-32 h-32 rounded-lg object-cover grayscale" data-alt="Author portrait of Marcus Thorne" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKqVUruC1RsYGEpgbv9Kj516EUSxS0rZb9hiVEq7AQUku7ey2NaH-h945_yWhaaY7Smyf8ITICwbWq1zOy5ky8tma9xLngpDFAID0b3DKmpHn2r4bqaq71SBZRh2fBSNhtHstBQdtWQNd0HaxGcUPnhW18yvzPvMTxeHQIWUXvWr-fAXW-rVZ9qrWrERX-9e_A8uChHwzLmGAxeJbC87qeX2M8oG7jIvO5zKBV2pjCfgG6cUTNACzNavuGxPNHQhQ3u3YPmqN3C9g8"/>
+<div>
+<h4 class="text-xl font-bold text-primary mb-2">About Marcus Thorne</h4>
+<p class="text-on-surface-variant leading-relaxed">
+                            Marcus oversees Pyramis's global strategy practice, specializing in operational turnarounds for mid-market industrials. With over 20 years of experience across EMEA and APAC, he champions the "integrated execution" methodology.
+                        </p>
+<div class="mt-4 flex gap-4">
+<a class="text-on-primary-container font-medium hover:underline" href="#">Follow on LinkedIn</a>
+<a class="text-on-primary-container font-medium hover:underline" href="#">View Portfolio</a>
+</div>
+</div>
+</div>
+</article>
+<!-- Sidebar: Recommended Reading -->
+<aside class="lg:col-span-4 space-y-12">
+<div>
+<h3 class="text-xs font-bold uppercase tracking-[0.2em] text-outline-variant mb-8 border-b border-outline-variant pb-4">Recommended Reading</h3>
+<div class="space-y-8">
+<!-- Card 1 -->
+<a class="group block" href="#">
+<div class="aspect-video rounded-lg overflow-hidden mb-4 bg-surface-container-high">
+<img alt="Article 1" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 scale-105 group-hover:scale-100" data-alt="Modern data visualization on a digital screen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3DPnYWZTOeLV6PDk_8VAyc8A-fC74fJeaZ431mTHiqUb-aEBUXl70YWCKM6CW-inaioCbHuw34l_6UL3OulCTBTcb4czWjQ_S-3f6uwp2jgOzuG_38bN_XBXtROevEi8QVWYt0STPvpXhzWHyHi0hzhy8sxAvLVCh4Kwxh1KxS24_XqfhXIkZeapz70X8lVEvF1iXK8N6EJYUazn8JN-GLXZPLiwh-tW3KVJ7iujUIK2hCuitKva4b_oURgAbivGhnpDGqDwVaqrA"/>
+</div>
+<span class="text-[10px] font-bold text-on-tertiary-container uppercase tracking-widest mb-2 block">Technology</span>
+<h4 class="text-lg font-bold text-primary leading-tight group-hover:text-on-primary-container transition-colors">Digital Twins: Simulating Your Supply Chain Resilience</h4>
+</a>
+<!-- Card 2 -->
+<a class="group block" href="#">
+<div class="aspect-video rounded-lg overflow-hidden mb-4 bg-surface-container-high">
+<img alt="Article 2" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 scale-105 group-hover:scale-100" data-alt="Business professionals collaborating in a modern office" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiISX9P_Fkgyjp7zu8gMZhVIgIHtgrTWOvGTSjeBJRhP9yRelouO3Gp5CB_3dgNawBIzKgO7MGV7Tjqrb2yR942QsqF4ECyqdWyrVo8sv2ll0fTkBCIFnu_knN-hAS85VT7AjAHOFLRblib_cMH0QQEJ4zqVZA5FjSx7-6RHsLB9af52fAWHtK5nTmm8KL7PHKPA_ZZ672-GH_0EewyXXKckoEN8mC2wv5Fk5qfo1iGG84mXAP8Di84Kqt-Gx1U4Oxl6iHKMlzSRjl"/>
+</div>
+<span class="text-[10px] font-bold text-on-tertiary-container uppercase tracking-widest mb-2 block">Culture</span>
+<h4 class="text-lg font-bold text-primary leading-tight group-hover:text-on-primary-container transition-colors">The Human Capital Risk: Why Retention is Your Best Strategy</h4>
+</a>
+</div>
+</div>
+<!-- Newsletter Widget -->
+<div class="p-8 bg-primary rounded-xl text-white">
+<h3 class="text-xl font-bold mb-4">Pyramis Insights</h3>
+<p class="text-slate-400 text-sm mb-6">Get monthly architectural strategy reports delivered to your inbox.</p>
+<div class="space-y-3">
+<input class="w-full bg-slate-900 border-none rounded p-3 text-sm focus:ring-1 focus:ring-tertiary-container" placeholder="Work email address" type="email"/>
+<button class="w-full bg-tertiary-container text-on-tertiary-fixed py-3 rounded text-sm font-bold uppercase tracking-widest">Subscribe</button>
+</div>
+</div>
+</aside>
+</div>
+<!-- Conversion Section -->
+<section class="max-w-screen-2xl mx-auto px-8 mt-32">
+<div class="bg-surface-container-low rounded-2xl overflow-hidden flex flex-col md:flex-row border border-outline-variant/10">
+<div class="md:w-1/2 p-12 md:p-20">
+<h2 class="text-4xl md:text-5xl font-bold text-primary mb-8 leading-tight">Ready to re-engineer your growth?</h2>
+<p class="text-lg text-on-surface-variant mb-12 max-w-md">
+                        Discuss your specific strategic challenges with our senior partners and discover how full-spectrum advisory can stabilize your operations.
+                    </p>
+<div class="flex flex-wrap gap-6">
+<button class="bg-primary text-white px-8 py-4 rounded font-bold transition-all hover:translate-x-1">
+                            Discuss your strategy
+                        </button>
+<button class="text-primary font-bold px-8 py-4 flex items-center gap-2 hover:gap-4 transition-all">
+                            View our Services <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="md:w-1/2 bg-slate-200 relative">
+<img alt="Consultation Space" class="w-full h-full object-cover grayscale opacity-80" data-alt="Minimalist modern boardroom with glass walls" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCQJDhP0GDaft9ICHgbLnJ2FqQIjMqCw6qDHqcPEeP2izGplJHyJNYZOOTSHlxspmrPH-qxUenelTf5RlOiZeVaEqcy24UrYq--zjQWSxFskSG6ILvMZNul_Yu0ZNV-OX4AaWx73SXzPLU9e8sX2jrsk-PcT2pM-qC6e8oE1J_rKMpNth-7CJTmSCr8QUAgHqMvvxYmMJNru0kYHsmq4k8mU1nVwDTcfTxMeutdtrK5vpURk_J7CNPYMR8fCCn8ay263iZ8cdsTWngB"/>
+<div class="absolute inset-0 bg-primary/20"></div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Shell -->
+<footer class="w-full border-t border-slate-200 bg-slate-50">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 py-16 max-w-screen-2xl mx-auto">
+<div class="col-span-1 md:col-span-1">
+<div class="text-lg font-bold text-slate-900 mb-6">Pyramis Consulting</div>
+<p class="text-slate-500 text-sm leading-relaxed max-w-xs">
+                    Pioneering architectural consulting through integrated strategy and operational excellence.
+                </p>
+</div>
+<div>
+<h5 class="font-bold text-slate-900 mb-6 uppercase text-xs tracking-widest">Global Offices</h5>
+<ul class="space-y-4 text-sm text-slate-500">
+<li>London, UK</li>
+<li>Singapore</li>
+<li>New York, US</li>
+<li>Zurich, CH</li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-slate-900 mb-6 uppercase text-xs tracking-widest">Resources</h5>
+<ul class="space-y-4 text-sm text-slate-500">
+<li class="hover:text-teal-600 transition-colors"><a href="#">Insights Blog</a></li>
+<li class="hover:text-teal-600 transition-colors"><a href="#">Case Studies</a></li>
+<li class="hover:text-teal-600 transition-colors"><a href="#">White Papers</a></li>
+</ul>
+</div>
+<div>
+<h5 class="font-bold text-slate-900 mb-6 uppercase text-xs tracking-widest">Connect</h5>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-slate-400 hover:text-teal-600 cursor-pointer transition-colors">public</span>
+<span class="material-symbols-outlined text-slate-400 hover:text-teal-600 cursor-pointer transition-colors">terminal</span>
+<span class="material-symbols-outlined text-slate-400 hover:text-teal-600 cursor-pointer transition-colors">alternate_email</span>
+</div>
+</div>
+</div>
+<div class="border-t border-slate-200 py-8 px-8 max-w-screen-2xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+<p class="text-slate-500 text-sm">© 2024 Pyramis Architectural Consulting. All rights reserved.</p>
+<div class="flex gap-8 text-sm text-slate-500">
+<a class="hover:text-teal-600 transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-teal-600 transition-colors" href="#">Terms of Service</a>
+<a class="hover:text-teal-600 transition-colors" href="#">Cookie Settings</a>
+</div>
+</div>
+</footer>
+</body></html>
