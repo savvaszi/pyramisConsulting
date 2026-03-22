@@ -150,7 +150,7 @@
 <script>
 async function loadBlogPosts() {
   try {
-    const res = await fetch('https://cms.pyramis.com.cy/items/blog_posts?sort=-date&limit=20');
+    const res = await fetch('https://cms.pyramis.com.cy/items/blog_posts?sort=-date&limit=20&access_token=RDX_1f69H6phPxbw2BI7zizBmDYJyBf1');
     if (!res.ok) return;
     const posts = (await res.json()).data;
     if (!posts || posts.length === 0) return;

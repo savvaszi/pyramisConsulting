@@ -262,7 +262,7 @@
     }
 
     try {
-      const res = await fetch(`${DIRECTUS}/items/blog_posts/${id}`);
+      const res = await fetch(`${DIRECTUS}/items/blog_posts/${id}?access_token=RDX_1f69H6phPxbw2BI7zizBmDYJyBf1`);
       if (!res.ok) throw new Error('Not found');
       const post = (await res.json()).data;
 
@@ -288,7 +288,7 @@
       document.getElementById('author-name').textContent = post.author ? 'About ' + post.author : '';
 
       // Recommended reading (other posts)
-      const allRes = await fetch(`${DIRECTUS}/items/blog_posts?sort=-date&limit=10`);
+      const allRes = await fetch(`${DIRECTUS}/items/blog_posts?sort=-date&limit=10&access_token=RDX_1f69H6phPxbw2BI7zizBmDYJyBf1`);
       if (allRes.ok) {
         const others = (await allRes.json()).data.filter(p => p.id != id).slice(0, 3);
         const rec = document.getElementById('recommended-posts');
