@@ -345,7 +345,7 @@
   }
   async function fetchCMSContent() {
     try {
-    const res = await fetch('https://cms.pyramis.com.cy/items/home_page');
+    const res = await fetch('https://cms.pyramis.com.cy/items/home_page?access_token=RDX_1f69H6phPxbw2BI7zizBmDYJyBf1');
     if (!res.ok) return;
     const d = (await res.json()).data;
     
