@@ -86,24 +86,22 @@
     </style>
 </head>
 <body class="bg-surface text-on-surface selection:bg-tertiary-fixed selection:text-on-tertiary-fixed">
-<!-- TopNavBar (Shared Component) -->
-<nav class="sticky top-0 z-50 w-full bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl">
-<div class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
-<div class="text-2xl font-bold tracking-tighter text-slate-900 dark:text-slate-50 font-headline">Pyramis</div>
-<div class="hidden md:flex items-center gap-8">
-<a class="font-['Space_Grotesk'] text-sm tracking-tight font-medium text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors" href="services_overview.html">Services</a>
-<a class="font-['Space_Grotesk'] text-sm tracking-tight font-medium text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors" href="detailed_services.html">Industries</a>
-<a class="font-['Space_Grotesk'] text-sm tracking-tight font-medium text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors" href="about_us.html">About</a>
-<a class="font-['Space_Grotesk'] text-sm tracking-tight font-medium text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors" href="insights_blog.html">Insights</a>
-<a class="font-['Space_Grotesk'] text-sm tracking-tight font-medium text-teal-600 font-bold border-b-2 border-teal-600" href="contact_us.html">Contact</a>
+<!-- Top Navigation -->
+<header class="sticky top-0 z-50 w-full bg-white/80 backdrop-blur-xl">
+<nav class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<a href="index.html" class="text-2xl font-bold tracking-tighter text-slate-900">Pyramis</a>
+<div class="hidden md:flex items-center gap-8 font-['Space_Grotesk'] text-sm tracking-tight font-medium">
+<a class="text-slate-600 hover:text-slate-900 transition-colors" href="services_overview.html">Services</a>
+<a class="text-slate-600 hover:text-slate-900 transition-colors" href="detailed_services.html">Industries</a>
+<a class="text-slate-600 hover:text-slate-900 transition-colors" href="about_us.html">About</a>
+<a class="text-slate-600 hover:text-slate-900 transition-colors" href="insights_blog.html">Insights</a>
+<a class="text-teal-600 font-bold border-b-2 border-teal-600" href="contact_us.html">Contact</a>
 </div>
-<div class="flex items-center gap-4">
-<button class="px-5 py-2.5 bg-tertiary-container text-white text-sm font-medium rounded-lg hover:opacity-80 transition-opacity active:scale-95 duration-150 ease-in-out">
-                    Book a Consultation
-                </button>
-</div>
-</div>
+<button class="bg-tertiary-container text-on-tertiary-fixed px-6 py-2.5 rounded hover:opacity-90 transition-opacity font-medium text-sm">
+                Book a Consultation
+            </button>
 </nav>
+</header>
 <main>
 <!-- Hero Section -->
 <section class="relative pt-24 pb-16 px-8 max-w-7xl mx-auto overflow-hidden">
