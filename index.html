@@ -1,350 +1,339 @@
 <!DOCTYPE html>
 
-<html lang="en"><head>
+<html class="light" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Pyramis | Premier Business Consulting Cyprus</title>
+<title>Pyramis | End-to-End Consulting</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "error-container": "#ffdad6",
-                        "on-error": "#ffffff",
-                        "inverse-on-surface": "#f0f1f1",
-                        "surface": "#f9f9f9",
-                        "surface-container-high": "#e8e8e8",
-                        "surface-bright": "#f9f9f9",
-                        "secondary-container": "#fed488",
-                        "primary-fixed": "#d6e3ff",
-                        "surface-container-low": "#f3f3f4",
-                        "background": "#f9f9f9",
-                        "surface-dim": "#dadada",
-                        "on-secondary-container": "#785a1a",
-                        "on-tertiary": "#ffffff",
-                        "on-surface": "#1a1c1c",
-                        "surface-container": "#eeeeee",
-                        "on-primary-container": "#708ab5",
-                        "inverse-surface": "#2f3131",
-                        "secondary-fixed": "#ffdea5",
-                        "surface-tint": "#465f88",
-                        "surface-container-lowest": "#ffffff",
-                        "error": "#ba1a1a",
-                        "tertiary": "#180500",
-                        "primary-container": "#002147",
-                        "secondary": "#775a19",
-                        "outline-variant": "#c4c6cf",
-                        "on-secondary-fixed": "#261900",
-                        "on-error-container": "#93000a",
-                        "secondary-fixed-dim": "#e9c176",
-                        "on-secondary": "#ffffff",
-                        "primary-fixed-dim": "#aec7f6",
-                        "on-tertiary-fixed-variant": "#6c391d",
-                        "inverse-primary": "#aec7f6",
-                        "tertiary-container": "#3d1500",
-                        "on-primary-fixed-variant": "#2d476f",
-                        "primary": "#000a1e",
-                        "tertiary-fixed-dim": "#ffb691",
-                        "on-tertiary-fixed": "#341100",
-                        "on-primary": "#ffffff",
-                        "on-secondary-fixed-variant": "#5d4201",
-                        "outline": "#74777f",
-                        "on-surface-variant": "#44474e",
-                        "on-tertiary-container": "#b97958",
-                        "on-primary-fixed": "#001b3d",
-                        "tertiary-fixed": "#ffdbcb",
-                        "surface-variant": "#e2e2e2",
-                        "on-background": "#1a1c1c",
-                        "surface-container-highest": "#e2e2e2"
-                    },
-                    fontFamily: {
-                        "headline": ["Noto Serif"],
-                        "body": ["Inter"],
-                        "label": ["Inter"]
-                    },
-                    borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
-                },
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary-fixed-variant": "#2f486a",
+              "on-background": "#0e1d26",
+              "secondary-container": "#e1e1c9",
+              "surface-dim": "#ccdce9",
+              "on-primary-fixed": "#001c3a",
+              "tertiary-fixed-dim": "#76d6d5",
+              "surface-container-highest": "#d5e5f1",
+              "surface-container-lowest": "#ffffff",
+              "secondary-fixed": "#e4e4cc",
+              "background": "#f5faff",
+              "on-surface": "#0e1d26",
+              "outline-variant": "#c4c6cf",
+              "on-secondary": "#ffffff",
+              "on-tertiary-container": "#2c9494",
+              "tertiary": "#000707",
+              "surface-bright": "#f5faff",
+              "surface": "#f5faff",
+              "inverse-surface": "#23323c",
+              "error": "#ba1a1a",
+              "on-secondary-container": "#636451",
+              "primary-container": "#001f3f",
+              "primary-fixed-dim": "#afc8f0",
+              "tertiary-container": "#002323",
+              "outline": "#74777f",
+              "surface-container": "#e0f0fd",
+              "on-primary": "#ffffff",
+              "primary": "#000613",
+              "on-primary-container": "#6f88ad",
+              "tertiary-fixed": "#93f2f2",
+              "on-secondary-fixed-variant": "#474836",
+              "on-tertiary-fixed": "#002020",
+              "inverse-on-surface": "#e4f3ff",
+              "surface-container-low": "#e9f5ff",
+              "secondary-fixed-dim": "#c8c8b0",
+              "surface-tint": "#476083",
+              "secondary": "#5e604d",
+              "on-secondary-fixed": "#1b1d0e",
+              "on-error-container": "#93000a",
+              "on-surface-variant": "#43474e",
+              "error-container": "#ffdad6",
+              "surface-variant": "#d5e5f1",
+              "surface-container-high": "#daeaf7",
+              "on-tertiary-fixed-variant": "#004f4f",
+              "on-error": "#ffffff",
+              "inverse-primary": "#afc8f0",
+              "on-tertiary": "#ffffff",
+              "primary-fixed": "#d4e3ff"
             },
-        }
+            fontFamily: {
+              "headline": ["Space Grotesk"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
     </script>
 <style>
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
-        }
-        .monolith-line {
-            width: 2px;
-            background-color: #e9c176; /* secondary-fixed-dim */
-        }
-        .text-glow {
-            text-shadow: 0 0 20px rgba(255, 222, 165, 0.2);
-        }
-        .glass-nav {
-            background-color: rgba(255, 255, 255, 0.8);
-            backdrop-filter: blur(12px);
-        }
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .pyramid-accent {
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+      }
     </style>
 </head>
-<body class="bg-surface text-on-surface font-body selection:bg-secondary-container selection:text-on-secondary-container">
-<!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 glass-nav shadow-sm shadow-slate-900/5 transition-all duration-500">
-<div class="flex justify-between items-center w-full px-8 py-5 max-w-7xl mx-auto">
-<div class="text-2xl font-headline font-bold tracking-tighter text-slate-950">Pyramis</div>
-<div class="hidden md:flex items-center space-x-12">
-<a class="text-slate-900 border-b-2 border-secondary pb-1 font-label text-sm uppercase tracking-widest" href="#">Services</a>
-<a class="text-slate-600 font-medium font-label text-sm uppercase tracking-widest hover:text-secondary transition-colors duration-300" href="#">Why Cyprus</a>
-<a class="text-slate-600 font-medium font-label text-sm uppercase tracking-widest hover:text-secondary transition-colors duration-300" href="#">About</a>
+<body class="bg-background text-on-background font-body antialiased">
+<!-- Top Navigation -->
+<header class="sticky top-0 z-50 w-full bg-white/80 backdrop-blur-xl">
+<nav class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-bold tracking-tighter text-slate-900">Pyramis</div>
+<div class="hidden md:flex items-center gap-8 font-['Space_Grotesk'] text-sm tracking-tight font-medium">
+<a class="text-teal-600 font-bold border-b-2 border-teal-600" href="services_overview.html">Services</a>
+<a class="text-slate-600 hover:text-slate-900 transition-colors" href="detailed_services.html">Industries</a>
+<a class="text-slate-600 hover:text-slate-900 transition-colors" href="about_us.html">About</a>
+<a class="text-slate-600 hover:text-slate-900 transition-colors" href="insights_blog.html">Insights</a>
+<a class="text-slate-600 hover:text-slate-900 transition-colors" href="contact_us.html">Contact</a>
 </div>
-<div class="flex items-center">
-<button class="bg-primary text-on-primary px-8 py-2.5 rounded-md font-label text-sm uppercase tracking-widest hover:shadow-lg transition-all duration-300 border-b-2 border-transparent hover:border-secondary">
-                    Contact
-                </button>
-</div>
-</div>
+<button class="bg-tertiary-container text-on-tertiary-fixed px-6 py-2.5 rounded hover:opacity-90 transition-opacity font-medium text-sm">
+                Book a Consultation
+            </button>
 </nav>
-<!-- Hero Section -->
-<header class="relative min-h-screen flex items-center pt-20 overflow-hidden">
-<div class="absolute inset-0 z-0">
-<img alt="Mediterranean Architecture" class="w-full h-full object-cover" data-alt="Aerial view of luxury Cyprus coastline and modern architecture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXSs8bqTz9COwame3WDMuDTMmXZgc-6O-WA8Bg29UgaFu6HFllYPKjb_-RD_ydCoAvMV3yjNPBU1tEZQ1prMzuOQQOR-zmoBLCs3SgPiatqA24DldMQEBR-bEAxYJlGhrsCzr9ZZpwkWZrvLpk_YpsewTfuoWpxNg-BbuxgNEnTgCNEL8ESgTWeoG6teJhAnpbzEiB7vyiRWZMBwoC2dDjGzFToOi10NLaYRm8p5qeFfBF9Ugi9JfYBcsrW_KqUEtyUcreLVPNHMBy"/>
-<div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/80 to-transparent"></div>
-</div>
-<div class="relative z-10 max-w-7xl mx-auto px-8 w-full">
-<div class="max-w-3xl">
-<div class="flex items-center gap-4 mb-8">
-<div class="monolith-line h-12"></div>
-<span class="font-label text-secondary-fixed-dim uppercase tracking-[0.3em] text-sm font-bold">Premier Consulting</span>
-</div>
-<h1 class="font-headline text-6xl md:text-8xl text-white -tracking-tight leading-[1.1] mb-10">
-                    Navigating Growth in the East Med.
-                </h1>
-<p class="text-slate-300 text-xl font-light leading-relaxed mb-12 max-w-xl">
-                    Pyramis provides bespoke corporate strategy and tax advisory services for visionary firms establishing their presence in the Mediterranean’s most strategic hub.
-                </p>
-<div class="flex flex-wrap gap-6">
-<button class="bg-primary text-on-primary px-10 py-5 rounded-md font-label text-sm uppercase tracking-widest hover:shadow-[0_10px_40px_-10px_rgba(119,90,25,0.3)] transition-all duration-500 border-b-2 border-secondary">
-                        Explore Our Services
-                    </button>
-<button class="border border-white/20 text-white px-10 py-5 rounded-md font-label text-sm uppercase tracking-widest hover:bg-white/5 transition-all duration-300">
-                        Our Vision
-                    </button>
-</div>
-</div>
-</div>
 </header>
-<!-- Core Services Section -->
-<section class="py-32 bg-surface">
-<div class="max-w-7xl mx-auto px-8">
-<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-end mb-24">
-<div class="lg:col-span-8">
-<span class="font-label text-secondary uppercase tracking-[0.2em] text-xs font-bold mb-4 block">Our Expertise</span>
-<h2 class="font-headline text-5xl text-primary -tracking-tight">Strategic Architecture for Global Enterprise</h2>
-</div>
-<div class="lg:col-span-4">
-<p class="text-on-surface-variant text-lg leading-relaxed italic border-l-2 border-secondary-fixed-dim pl-6">
-                        Excellence is not an act, but a habit. We curate solutions that transcend standard advisory.
+<main>
+<!-- Hero Section -->
+<section class="relative overflow-hidden bg-primary-container py-24 md:py-32">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center relative z-10">
+<div class="space-y-8">
+<h1 class="font-headline text-5xl md:text-7xl font-bold text-white leading-[1.1] tracking-tight">
+                        End-to-End Consulting for Cyprus Businesses
+                    </h1>
+<p class="text-on-primary-container text-xl md:text-2xl max-w-xl leading-relaxed">
+                        Pyramis supports strategy, operations, digital, finance, and people topics under one roof.
                     </p>
-</div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 gap-px bg-outline-variant/20">
-<!-- Service 1 -->
-<div class="bg-surface-container-lowest p-12 group hover:bg-primary-container transition-all duration-500 cursor-default">
-<div class="w-16 h-16 bg-secondary-fixed/30 rounded-full flex items-center justify-center mb-10 group-hover:bg-secondary transition-colors">
-<span class="material-symbols-outlined text-secondary group-hover:text-white text-3xl" data-icon="account_balance">account_balance</span>
-</div>
-<h3 class="font-headline text-2xl text-primary group-hover:text-white mb-6">Corporate Strategy</h3>
-<p class="text-on-surface-variant group-hover:text-slate-400 leading-relaxed mb-8">
-                        Comprehensive structural frameworks designed to align your Mediterranean operations with global growth trajectories.
-                    </p>
-<a class="inline-flex items-center text-secondary font-label text-xs uppercase tracking-widest font-bold group-hover:text-secondary-fixed" href="#">
-                        View Detailed Scope
-                        <span class="material-symbols-outlined ml-2 text-sm" data-icon="arrow_forward">arrow_forward</span>
-</a>
-</div>
-<!-- Service 2 -->
-<div class="bg-surface-container-lowest p-12 group hover:bg-primary-container transition-all duration-500 cursor-default">
-<div class="w-16 h-16 bg-secondary-fixed/30 rounded-full flex items-center justify-center mb-10 group-hover:bg-secondary transition-colors">
-<span class="material-symbols-outlined text-secondary group-hover:text-white text-3xl" data-icon="receipt_long">receipt_long</span>
-</div>
-<h3 class="font-headline text-2xl text-primary group-hover:text-white mb-6">Tax Advisory</h3>
-<p class="text-on-surface-variant group-hover:text-slate-400 leading-relaxed mb-8">
-                        Sophisticated tax optimization strategies leveraging Cyprus’s favorable regulatory environment for maximum efficiency.
-                    </p>
-<a class="inline-flex items-center text-secondary font-label text-xs uppercase tracking-widest font-bold group-hover:text-secondary-fixed" href="#">
-                        Compliance Insights
-                        <span class="material-symbols-outlined ml-2 text-sm" data-icon="arrow_forward">arrow_forward</span>
-</a>
-</div>
-<!-- Service 3 -->
-<div class="bg-surface-container-lowest p-12 group hover:bg-primary-container transition-all duration-500 cursor-default">
-<div class="w-16 h-16 bg-secondary-fixed/30 rounded-full flex items-center justify-center mb-10 group-hover:bg-secondary transition-colors">
-<span class="material-symbols-outlined text-secondary group-hover:text-white text-3xl" data-icon="travel_explore">travel_explore</span>
-</div>
-<h3 class="font-headline text-2xl text-primary group-hover:text-white mb-6">Market Entry</h3>
-<p class="text-on-surface-variant group-hover:text-slate-400 leading-relaxed mb-8">
-                        Seamless integration into the Cyprus business landscape through localized intelligence and institutional networking.
-                    </p>
-<a class="inline-flex items-center text-secondary font-label text-xs uppercase tracking-widest font-bold group-hover:text-secondary-fixed" href="#">
-                        Market Analysis
-                        <span class="material-symbols-outlined ml-2 text-sm" data-icon="arrow_forward">arrow_forward</span>
-</a>
-</div>
-</div>
-</div>
-</section>
-<!-- Why Cyprus Section (The Monolith Header Style) -->
-<section class="relative overflow-hidden bg-primary-container py-32">
-<div class="absolute right-0 top-0 w-1/3 h-full opacity-20 hidden lg:block">
-<img alt="Cyprus Strategic Location" class="w-full h-full object-cover grayscale" data-alt="Monochrome geometric architectural pattern" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAn7-uiMXGfhdjoggMYS6S_t2xp3keGzRvUzth1_UUC7EBA3cI4Ww1IlXbKFTnkNUc1oUlKnVAKU0ppLYFgO3lGUH0Wn5Iqecymobd99d__V10YRDO_RjcNzkHopEad6MtfCfy2xMNUN5gpZZHwkDXUz4UUglvjzpRPr7z12M2W6HymI42mx85tMdRKTDyJHCTmq5_GsHoEYnO-0sd1qIFASkf8__e1mMwhGky6CIlz9NUhtyukIJbZF1pZMLW_bxdI3gs3rl09H1jl"/>
-</div>
-<div class="max-w-7xl mx-auto px-8 relative z-10">
-<div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
-<div>
-<div class="flex items-center gap-6 mb-12">
-<div class="monolith-line h-24"></div>
-<div>
-<span class="font-label text-secondary-fixed-dim uppercase tracking-widest text-sm mb-2 block">Strategic Positioning</span>
-<h2 class="font-headline text-5xl text-white leading-tight">The Gateway to Three Continents</h2>
-</div>
-</div>
-<div class="space-y-10">
-<div class="flex gap-6">
-<span class="font-headline text-secondary-fixed-dim text-3xl opacity-50">01</span>
-<div>
-<h4 class="text-white font-headline text-xl mb-3">IP Box Regime</h4>
-<p class="text-slate-300 leading-relaxed">Cyprus offers one of the most competitive intellectual property regimes in Europe, with an effective tax rate as low as 2.5%.</p>
-</div>
-</div>
-<div class="flex gap-6">
-<span class="font-headline text-secondary-fixed-dim text-3xl opacity-50">02</span>
-<div>
-<h4 class="text-white font-headline text-xl mb-3">EU Access</h4>
-<p class="text-slate-300 leading-relaxed">Full access to the European Single Market while maintaining a strategic vantage point for MENA and Asian markets.</p>
-</div>
-</div>
-<div class="flex gap-6">
-<span class="font-headline text-secondary-fixed-dim text-3xl opacity-50">03</span>
-<div>
-<h4 class="text-white font-headline text-xl mb-3">Common Law System</h4>
-<p class="text-slate-300 leading-relaxed">A legal framework based on English Common Law principles, providing familiarity and security for international investors.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="grid grid-cols-2 gap-4">
-<div class="space-y-4 pt-12">
-<img alt="Limassol Business District" class="w-full h-64 object-cover rounded-md" data-alt="Modern Limassol office skyline by the sea" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMKyIuNxbFg23GZG6sYydoUaH1Ecz81HlaR4A4ACIR_uPmAkWJHaYjaUimzsqS3tEOgSOvxjZsclv0ADjprKGx6bYqVRoeuMvHKbPMUX0RgGqNqRfg25vnWjWicJT-FuWrQixv9CC7a-UfrdVHGKKNjzUhxXRJhxRotehHINUMEyxFS1tsh4D0LSA6BHssakqN8cSW0EOtnsMryoTUYSoG8SUor_KBOcreWrvPjrXur1neAPfZa-3_fvN6ne358eXGqq9yevnK-fQy"/>
-<img alt="Cyprus Meeting" class="w-full h-80 object-cover rounded-md" data-alt="Professional meeting in a high-end corporate setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCh8GsPaXKpbbik_ixtPnJkjyFiWprBRoGL-q30sUE0O3dfGtQECgP_d1UJFJUqqhmVBHE6mDDz8jQobEQc93h5Y_RGz_8B6AlIvAjY5sFytZyoSPvG9FpOLS-VJiipekFfhPdn9uYZdyJ2w7nb6pB7yhpM3JCs8g6Ay7E3MP1KggZsiP55dGnzZYueGYzfIbJmzymQWIctD1__KnKMqUsNdebTs1hALRlzK2XoMBY6F4iV_5fNrP2pb3mVSlVMmKAQOKfJhcsAy_G0"/>
-</div>
-<div class="space-y-4">
-<img alt="Modern Architecture" class="w-full h-80 object-cover rounded-md" data-alt="Glass and steel skyscraper facade" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALqa295sefo4n3_9sWr-P_S5mL7YkfJLUm7iZrwPl5crZVvT7Il0B1fZZcRCwX4bsihKwkWgwW2sVWMaQfiGf9cUjEogk_uglm6BXIhRizJaJvMaTDQo9E0YSwTJJ15-jkOjOnmqapj3Slu_baALfdWdytTGuhXrvIm1zinS54wEpgwYCYAtgPaTRqCKrseXe_5tAW5bRQGrMOaXOGoh92GC8xsJmpRhq0JExb-gomL6zIGXv8qSATSHernZjRkx-1zOx8oUlwxwyZ"/>
-<img alt="Luxury Business" class="w-full h-64 object-cover rounded-md" data-alt="Luxury yacht in a Cyprus marina at dusk" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3rDLLng8oi29_VQ4akh3zoebh5SYsts3NsCi3pMuYBthVr6bkv_Y5zWYEAPG6X0Lj9AO765WI3Yj_IW_sQNc85SNci8CdblLA6S11IOFIWZloPpbY-6mSC1DjSPV42YOStv4_N_XY2wL1y0Cg_UN7afG5-Elzxq9hGzVtJ2bERpojvOS-HNVXQ4M7l9APJ6mnP4MYuYenA_E_yAzttwzjVC_Jiq_ujAMc06t88FDC3EzUSzkAuakValXoGp27d2uHq7ltbOHidBXO"/>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Lead Capture Section -->
-<section class="py-32 bg-surface-container-low">
-<div class="max-w-4xl mx-auto px-8">
-<div class="bg-surface-container-lowest p-12 md:p-20 shadow-xl shadow-primary/5 relative">
-<div class="text-center mb-16">
-<span class="font-label text-secondary uppercase tracking-[0.3em] text-xs font-bold mb-6 block">Initial Inquiry</span>
-<h2 class="font-headline text-4xl text-primary mb-4">Request a Consultation</h2>
-<p class="text-on-surface-variant max-w-xl mx-auto">Our senior partners personally review all inquiries to ensure the highest standard of tailored corporate advice.</p>
-</div>
-<form action="#" class="space-y-12">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-<div class="relative group">
-<label class="block font-label text-xs uppercase tracking-widest text-primary mb-2">Full Name</label>
-<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:border-secondary focus:ring-0 text-primary px-0 py-3 transition-colors duration-300" placeholder="Alexander Michaelides" type="text"/>
-</div>
-<div class="relative group">
-<label class="block font-label text-xs uppercase tracking-widest text-primary mb-2">Corporate Email</label>
-<input class="w-full bg-transparent border-0 border-b border-outline-variant focus:border-secondary focus:ring-0 text-primary px-0 py-3 transition-colors duration-300" placeholder="a.michaelides@firm.com" type="email"/>
-</div>
-</div>
-<div class="relative group">
-<label class="block font-label text-xs uppercase tracking-widest text-primary mb-2">Service of Interest</label>
-<select class="w-full bg-transparent border-0 border-b border-outline-variant focus:border-secondary focus:ring-0 text-primary px-0 py-3 appearance-none transition-colors duration-300">
-<option>Corporate Strategy</option>
-<option>Tax Advisory &amp; Compliance</option>
-<option>Market Entry &amp; Setup</option>
-<option>Other Advisory Services</option>
-</select>
-</div>
-<div class="relative group">
-<label class="block font-label text-xs uppercase tracking-widest text-primary mb-2">Project Description</label>
-<textarea class="w-full bg-transparent border-0 border-b border-outline-variant focus:border-secondary focus:ring-0 text-primary px-0 py-3 transition-colors duration-300" placeholder="Briefly describe your objectives..." rows="4"></textarea>
-</div>
-<div class="flex justify-center pt-8">
-<button class="bg-primary text-on-primary px-16 py-5 rounded-md font-label text-sm uppercase tracking-widest hover:shadow-2xl transition-all duration-500 border-b-2 border-secondary" type="submit">
-                            Initiate Contact
+<div class="flex flex-wrap gap-4 pt-4">
+<button class="bg-tertiary-fixed text-on-tertiary-fixed px-8 py-4 rounded-lg font-semibold hover:opacity-90 transition-all flex items-center gap-2">
+                            Book a Free Consultation
+                            <span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+<button class="border border-outline-variant/30 text-white px-8 py-4 rounded-lg font-semibold hover:bg-white/10 transition-all">
+                            Explore Our Services
                         </button>
 </div>
-</form>
+</div>
+<div class="relative h-[500px] hidden lg:block">
+<!-- Abstract Illustration -->
+<div class="absolute inset-0 bg-gradient-to-br from-tertiary-fixed/20 to-transparent rounded-full blur-3xl opacity-50"></div>
+<div class="relative w-full h-full flex items-center justify-center">
+<div class="grid grid-cols-2 gap-4 w-full h-full">
+<div class="bg-surface-container-high/10 backdrop-blur-sm rounded-2xl p-8 border border-white/5 flex flex-col justify-end transform -rotate-3 translate-y-8">
+<span class="material-symbols-outlined text-tertiary-fixed text-4xl mb-4" data-weight="fill" style="font-variation-settings: 'FILL' 1;">monitoring</span>
+<div class="h-2 w-24 bg-tertiary-fixed/50 rounded-full mb-2"></div>
+<div class="h-2 w-16 bg-tertiary-fixed/30 rounded-full"></div>
+</div>
+<div class="bg-surface-container-highest/10 backdrop-blur-sm rounded-2xl p-8 border border-white/5 flex flex-col justify-start transform rotate-6 translate-x-4">
+<span class="material-symbols-outlined text-teal-400 text-4xl mb-4" data-weight="fill" style="font-variation-settings: 'FILL' 1;">groups</span>
+<div class="h-2 w-20 bg-teal-400/50 rounded-full mb-2"></div>
+<div class="h-2 w-28 bg-teal-400/30 rounded-full"></div>
+</div>
+<div class="col-span-2 bg-tertiary-container/40 backdrop-blur-md rounded-2xl p-8 border border-white/10 transform -rotate-2">
+<div class="flex items-center gap-6">
+<div class="w-16 h-16 rounded-full bg-tertiary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-on-tertiary-fixed text-3xl">trending_up</span>
+</div>
+<div class="space-y-3 flex-1">
+<div class="h-3 w-3/4 bg-white/20 rounded-full"></div>
+<div class="h-3 w-1/2 bg-white/10 rounded-full"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Background Pyramid Accent -->
+<div class="absolute -bottom-24 -right-24 w-96 h-96 pyramid-accent bg-white/5 rotate-12"></div>
+</section>
+<!-- Sectors Logo Strip -->
+<section class="py-12 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<p class="text-center text-on-surface-variant font-label text-sm uppercase tracking-[0.2em] mb-8">Sectors we serve</p>
+<div class="flex flex-wrap justify-center gap-12 opacity-50 grayscale">
+<div class="flex items-center gap-2 font-headline font-bold text-xl"><span class="material-symbols-outlined">account_balance</span> Finance</div>
+<div class="flex items-center gap-2 font-headline font-bold text-xl"><span class="material-symbols-outlined">shopping_bag</span> Retail</div>
+<div class="flex items-center gap-2 font-headline font-bold text-xl"><span class="material-symbols-outlined">factory</span> Industry</div>
+<div class="flex items-center gap-2 font-headline font-bold text-xl"><span class="material-symbols-outlined">laptop_mac</span> Tech</div>
+<div class="flex items-center gap-2 font-headline font-bold text-xl"><span class="material-symbols-outlined">local_hospital</span> Health</div>
 </div>
 </div>
 </section>
-<!-- Footer -->
-<footer class="bg-slate-950 pt-20 pb-10">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 max-w-7xl mx-auto">
-<div class="md:col-span-1">
-<span class="text-xl font-headline text-white mb-4 block">Pyramis</span>
-<p class="text-slate-400 text-sm leading-relaxed mb-8">
-                    Redefining business consulting through Mediterranean insight and global precision.
-                </p>
-<div class="flex space-x-4">
-<span class="material-symbols-outlined text-amber-200 cursor-pointer hover:text-white" data-icon="public">public</span>
-<span class="material-symbols-outlined text-amber-200 cursor-pointer hover:text-white" data-icon="hub">hub</span>
-<span class="material-symbols-outlined text-amber-200 cursor-pointer hover:text-white" data-icon="verified">verified</span>
+<!-- Services Bento Grid -->
+<section class="py-24 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8">
+<div class="max-w-3xl mb-16">
+<h2 class="font-headline text-4xl md:text-5xl font-bold mb-6 tracking-tight">Full-Spectrum Expertise</h2>
+<p class="text-lg text-on-surface-variant leading-relaxed">Why full-spectrum matters: we bridge the gap between high-level strategy and granular operational execution, ensuring no value is lost in translation.</p>
 </div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Card 1 -->
+<div class="md:col-span-2 bg-surface p-10 rounded-xl hover:bg-surface-container-high transition-colors group">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">strategy</span>
+<h3 class="font-headline text-2xl font-bold mb-4">Strategy &amp; Growth</h3>
+<p class="text-on-surface-variant leading-relaxed">Defining your North Star. Market entry, competitive positioning, and sustainable long-term business models designed for the Cyprus landscape.</p>
+</div>
+<!-- Card 2 -->
+<div class="bg-primary-container text-white p-10 rounded-xl flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-tertiary-fixed text-4xl mb-6">settings_suggest</span>
+<h3 class="font-headline text-2xl font-bold mb-4">Operations &amp; Process</h3>
+</div>
+<p class="text-on-primary-container leading-relaxed">Streamlining internal workflows for peak efficiency and cost-optimization.</p>
+</div>
+<!-- Card 3 -->
+<div class="bg-surface p-10 rounded-xl hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">devices</span>
+<h3 class="font-headline text-2xl font-bold mb-4">Digital &amp; Technology</h3>
+<p class="text-on-surface-variant leading-relaxed">Modernizing your stack and leading seamless digital transformation journeys.</p>
+</div>
+<!-- Card 4 -->
+<div class="bg-surface p-10 rounded-xl hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">payments</span>
+<h3 class="font-headline text-2xl font-bold mb-4">Financial &amp; Performance</h3>
+<p class="text-on-surface-variant leading-relaxed">Advanced modeling, capital structure optimization, and rigorous reporting.</p>
+</div>
+<!-- Card 5 -->
+<div class="bg-surface p-10 rounded-xl hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-primary text-4xl mb-6">badge</span>
+<h3 class="font-headline text-2xl font-bold mb-4">People &amp; Organization</h3>
+<p class="text-on-surface-variant leading-relaxed">Building cultures that last. Talent strategy and organizational design.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 4-Step Process Section -->
+<section class="py-24 bg-surface">
+<div class="max-w-7xl mx-auto px-8">
+<div class="text-center mb-20">
+<h2 class="font-headline text-4xl font-bold tracking-tight">The Pyramis Methodology</h2>
+</div>
+<div class="relative grid grid-cols-1 md:grid-cols-4 gap-8">
+<!-- Process Step 1 -->
+<div class="relative z-10 space-y-4">
+<div class="w-12 h-12 bg-primary-container text-white flex items-center justify-center rounded-lg font-headline font-bold text-xl">01</div>
+<h4 class="font-headline font-bold text-xl">Discover</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Deep-dive into your current ecosystem, stakeholders, and market headwinds.</p>
+</div>
+<!-- Process Step 2 -->
+<div class="relative z-10 space-y-4">
+<div class="w-12 h-12 bg-primary-container text-white flex items-center justify-center rounded-lg font-headline font-bold text-xl">02</div>
+<h4 class="font-headline font-bold text-xl">Diagnose</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Identifying root causes and friction points using data-driven analysis.</p>
+</div>
+<!-- Process Step 3 -->
+<div class="relative z-10 space-y-4">
+<div class="w-12 h-12 bg-primary-container text-white flex items-center justify-center rounded-lg font-headline font-bold text-xl">03</div>
+<h4 class="font-headline font-bold text-xl">Design</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Crafting bespoke solutions tailored to your unique organizational DNA.</p>
+</div>
+<!-- Process Step 4 -->
+<div class="relative z-10 space-y-4">
+<div class="w-12 h-12 bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center rounded-lg font-headline font-bold text-xl">04</div>
+<h4 class="font-headline font-bold text-xl">Deliver</h4>
+<p class="text-on-surface-variant text-sm leading-relaxed">Execution-led advisory. We don't just leave a slide deck—we build the future.</p>
+</div>
+<!-- Dotted Connector Line -->
+<div class="hidden md:block absolute top-6 left-12 right-12 h-[2px] border-t-2 border-dashed border-outline-variant/30 -z-0"></div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-24 bg-surface-container-high relative overflow-hidden">
+<div class="max-w-7xl mx-auto px-8 relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+<div class="lg:col-span-1">
+<h2 class="font-headline text-4xl font-bold leading-tight mb-6">Perspectives from our partners</h2>
+<div class="w-20 h-1 bg-tertiary-container"></div>
+</div>
+<div class="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="bg-surface p-8 rounded-xl">
+<span class="material-symbols-outlined text-teal-600 mb-6" data-weight="fill" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<p class="text-on-surface leading-relaxed mb-6 italic">"Pyramis redefined how we approach digital logistics. Their end-to-end view saved us 22% in operational overhead within the first year."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-slate-200">
+<img alt="Executive portrait" class="w-full h-full object-cover rounded-full" data-alt="Portrait of a male business executive" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3_SCmJhq6u0nTJKxp3Hpqea0MTp7YCBYQhwdGMLfWEuOyoVO7R1UxIUDBtWypaxI-xZFPYQzGBtsVwYO6bnWxJ9BysxjKsFRZ2HIuwx5xKjckFtL9erLMeYOkmmyGEw8SPj8TzGVG3r7BekmbDf4XGcwWRYwF9IvpY2vZhCyUty43ie7UW4L4ZzsJnXlz1B_uxzryNqUUOlSUgP1UDJawtqM9acaKgoEMhtHhyBeFRwjnIb4Unr7WbR5gmwv5w-1GacF0SqJwj2dO"/>
 </div>
 <div>
-<h4 class="font-headline text-lg text-white mb-8">Quick Links</h4>
+<p class="font-bold text-sm">Andreas K.</p>
+<p class="text-on-surface-variant text-xs">CEO, Helios Logistics</p>
+</div>
+</div>
+</div>
+<div class="bg-surface p-8 rounded-xl">
+<span class="material-symbols-outlined text-teal-600 mb-6" data-weight="fill" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+<p class="text-on-surface leading-relaxed mb-6 italic">"The strategy was crisp, but it was the cultural transformation during the 'Deliver' phase that really changed our company's trajectory."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-slate-200">
+<img alt="Executive portrait" class="w-full h-full object-cover rounded-full" data-alt="Portrait of a female corporate leader" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBiWiQN3CYq9hNiMj_8CJVOOeZUDfnOr5zaRoTLaGaEkr6vsgNOsHkNUTGbQqdEMN9aGp5fAHS7-tiu6-TCVTrsKyf1STUc0LzogTotNp5p660xB7YWxcYuyg7keiveuURuS59YxM7wbvz1s6qWjsHs3JLSVPvH4gnkTF5VwUiErGSUA0Lenx_t60fY8xuQrLTicOA7JllVLZUuRXrSnmGG1lKF9IGYgKxtKnKzQGqOpc8sS7OXLRNiped_pamelt4xDP48_P34EgFI"/>
+</div>
+<div>
+<p class="font-bold text-sm">Elena M.</p>
+<p class="text-on-surface-variant text-xs">Managing Director, Azure Finance</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Background Shape -->
+<div class="absolute top-0 right-0 w-1/3 h-full bg-tertiary-container/5 -skew-x-12 transform translate-x-1/2"></div>
+</section>
+<!-- Final CTA Band -->
+<section class="py-20 bg-primary-container relative">
+<div class="max-w-7xl mx-auto px-8 flex flex-col md:flex-row items-center justify-between gap-8 relative z-10">
+<div class="text-center md:text-left">
+<h2 class="font-headline text-3xl md:text-4xl font-bold text-white mb-2">Ready to evolve?</h2>
+<p class="text-on-primary-container text-lg">Let's build your enterprise's new architectural foundation.</p>
+</div>
+<button class="bg-tertiary-fixed text-on-tertiary-fixed px-10 py-5 rounded-lg font-bold hover:scale-105 transition-transform">
+                    Schedule a Strategy Call
+                </button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-50 border-t border-slate-200 py-16">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 space-y-6">
+<div class="text-xl font-bold tracking-tighter text-slate-900">Pyramis</div>
+<p class="text-slate-500 text-sm leading-relaxed">Silent authority in business transformation. Headquartered in Limassol, serving global ambitions.</p>
+</div>
+<div class="col-span-1">
+<h5 class="font-headline font-bold text-sm uppercase tracking-widest mb-6">Firm</h5>
 <ul class="space-y-4">
-<li><a class="text-slate-400 hover:text-white text-sm transition-colors" href="#">Privacy Policy</a></li>
-<li><a class="text-slate-400 hover:text-white text-sm transition-colors" href="#">Terms of Service</a></li>
-<li><a class="text-slate-400 hover:text-white text-sm transition-colors" href="#">LinkedIn</a></li>
-<li><a class="text-slate-400 hover:text-white text-sm transition-colors" href="#">Insights</a></li>
+<li><a class="text-slate-500 hover:text-slate-900 text-sm transition-all hover:underline" href="about_us.html">About</a></li>
+<li><a class="text-slate-500 hover:text-slate-900 text-sm transition-all hover:underline" href="detailed_services.html">Industries</a></li>
+<li><a class="text-slate-500 hover:text-slate-900 text-sm transition-all hover:underline" href="insights_blog.html">Insights</a></li>
 </ul>
 </div>
-<div>
-<h4 class="font-headline text-lg text-white mb-8">Headquarters</h4>
-<address class="not-italic text-slate-400 text-sm leading-relaxed">
-                    Pyramis Plaza, Level 4<br/>
-                    Makarios Ave, Limassol<br/>
-                    Cyprus, CY-3030<br/>
-<span class="block mt-4 text-amber-200">+357 25 100 000</span>
-</address>
+<div class="col-span-1">
+<h5 class="font-headline font-bold text-sm uppercase tracking-widest mb-6">Expertise</h5>
+<ul class="space-y-4">
+<li><a class="text-slate-500 hover:text-slate-900 text-sm transition-all hover:underline" href="services_overview.html">Services Overview</a></li>
+<li><a class="text-slate-500 hover:text-slate-900 text-sm transition-all hover:underline" href="detailed_services.html">Detailed Services</a></li>
+<li><a class="text-slate-500 hover:text-slate-900 text-sm transition-all hover:underline" href="single_blog_post.html">Blog Post</a></li>
+</ul>
 </div>
-<div>
-<h4 class="font-headline text-lg text-white mb-8">Affiliations</h4>
-<div class="grid grid-cols-2 gap-4">
-<div class="h-12 bg-white/5 flex items-center justify-center grayscale hover:grayscale-0 transition-all opacity-40">
-<span class="text-[10px] text-white font-label">CY-TAX</span>
-</div>
-<div class="h-12 bg-white/5 flex items-center justify-center grayscale hover:grayscale-0 transition-all opacity-40">
-<span class="text-[10px] text-white font-label">INT-ACAD</span>
-</div>
-<div class="h-12 bg-white/5 flex items-center justify-center grayscale hover:grayscale-0 transition-all opacity-40">
-<span class="text-[10px] text-white font-label">EU-BIZ</span>
-</div>
-<div class="h-12 bg-white/5 flex items-center justify-center grayscale hover:grayscale-0 transition-all opacity-40">
-<span class="text-[10px] text-white font-label">MED-STRAT</span>
+<div class="col-span-1">
+<h5 class="font-headline font-bold text-sm uppercase tracking-widest mb-6">Contact</h5>
+<ul class="space-y-4">
+<li><a class="text-slate-500 hover:text-slate-900 text-sm transition-all hover:underline" href="contact_us.html">Contact</a></li>
+<li><a class="text-slate-500 hover:text-slate-900 text-sm transition-all hover:underline" href="#">Privacy Policy</a></li>
+<li><a class="text-slate-500 hover:text-slate-900 text-sm transition-all hover:underline" href="#">Terms of Service</a></li>
+</ul>
 </div>
 </div>
-</div>
-</div>
-<div class="mt-20 pt-8 border-t border-white/5 max-w-7xl mx-auto px-8 flex flex-col md:flex-row justify-between items-center gap-4">
-<p class="text-slate-500 text-xs">© 2024 Pyramis Consulting. All rights reserved.</p>
-<p class="text-slate-500 text-xs flex items-center gap-2">
-<span class="material-symbols-outlined text-[10px]" data-icon="location_on">location_on</span>
-                Limassol | Nicosia | Paphos
-            </p>
+<div class="max-w-7xl mx-auto px-8 mt-16 pt-8 border-t border-slate-200 text-center md:text-left">
+<p class="text-slate-500 text-sm">© 2024 Pyramis Consulting. All rights reserved.</p>
 </div>
 </footer>
 
