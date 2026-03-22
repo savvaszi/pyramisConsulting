@@ -1,0 +1,13 @@
+1. Creating collection: home_page
+2. Creating fields for home_page
+Field might already exist hero_title
+Field might already exist hero_subtitle
+Field might already exist service_1_title
+Field might already exist service_1_description
+Field might already exist service_2_title
+Field might already exist service_2_description
+Field might already exist service_3_title
+Field might already exist service_3_description
+3. Giving Public Read Permissions to home_page (role null)
+Permissions rule might exist already
+4. Initializing data...
