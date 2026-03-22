@@ -347,4 +347,34 @@
             </p>
 </div>
 </footer>
+<script>
+  async function fetchDirectusContent() {
+    try {
+      const apiUrl = 'https://cms.pyramis.com.cy/items/home_page';
+      const response = await fetch(apiUrl);
+      if (response.ok) {
+        const json = await response.json();
+        const data = json.data;
+
+        // Map data to the DOM elements
+        if (data.hero_title) document.querySelector('h1').innerText = data.hero_title;
+        if (data.hero_subtitle) document.querySelector('header p').innerText = data.hero_subtitle;
+        
+        const serviceTitles = document.querySelectorAll('h3');
+        const serviceDescriptions = document.querySelectorAll('section:nth-of-type(1) p');
+        
+        if (data.service_1_title && serviceTitles[0]) serviceTitles[0].innerHTML = data.service_1_title;
+        if (data.service_1_description && serviceDescriptions[0]) serviceDescriptions[0].innerHTML = data.service_1_description;
+        if (data.service_2_title && serviceTitles[1]) serviceTitles[1].innerHTML = data.service_2_title;
+        if (data.service_2_description && serviceDescriptions[1]) serviceDescriptions[1].innerHTML = data.service_2_description;
+        if (data.service_3_title && serviceTitles[2]) serviceTitles[2].innerHTML = data.service_3_title;
+        if (data.service_3_description && serviceDescriptions[2]) serviceDescriptions[2].innerHTML = data.service_3_description;
+      }
+    } catch(err) {
+      console.warn('Failed to load dynamic content from Directus CMS:', err);
+    }
+  }
+  
+  document.addEventListener('DOMContentLoaded', fetchDirectusContent);
+</script>
 </body></html>
