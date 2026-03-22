@@ -316,4 +316,50 @@
 <p class="text-slate-500 font-['Inter'] text-xs">© 2024 Pyramis Consulting. All rights reserved.</p>
 </div>
 </footer>
+
+<script>
+  async function fetchDirectusContent() {
+    try {
+      const slug = window.location.pathname.split('/').pop().replace('.html', '') || 'index';
+      // Adjust if it's blog post
+      if (slug === 'single_blog_post') {
+        const apiUrl = 'https://cms.pyramis.com.cy/items/blog_posts?filter[slug][_eq]=navigating-global-resilience';
+        const res = await fetch(apiUrl);
+        if (res.ok) {
+          const json = await res.json();
+          const p = json.data[0];
+          if (p) {
+             if (p.title) document.querySelector('h1').innerText = p.title;
+             if (p.subtitle) document.querySelector('header p').innerText = p.subtitle;
+             const contents = document.querySelectorAll('article p');
+             if (p.content && contents.length > 0) contents[0].innerText = p.content;
+             if (p.author) document.querySelector('header p.font-bold').innerText = p.author;
+          }
+        }
+        return;
+      }
+      
+      const apiUrl = 'https://cms.pyramis.com.cy/items/pages?filter[slug][_eq]=' + slug;
+      const res = await fetch(apiUrl);
+      if (res.ok) {
+        const json = await res.json();
+        const p = json.data[0];
+        if (p) {
+          const h1 = document.querySelector('h1');
+          if (h1 && p.hero_title) h1.innerText = p.hero_title;
+          const heroP = document.querySelector('header p');
+          if (heroP && p.hero_subtitle) heroP.innerText = p.hero_subtitle;
+          const h2s = document.querySelectorAll('h2');
+          if (h2s.length > 0 && p.section_1_title) h2s[0].innerText = p.section_1_title;
+          const ps = document.querySelectorAll('p');
+          if (ps.length > 1 && p.section_1_text) ps[1].innerText = p.section_1_text;
+        }
+      }
+    } catch(err) {
+      console.warn('Failed to load dynamic content from Directus CMS:', err);
+    }
+  }
+  
+  document.addEventListener('DOMContentLoaded', fetchDirectusContent);
+</script>
 </body></html>
