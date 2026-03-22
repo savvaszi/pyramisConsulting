@@ -347,34 +347,34 @@
             </p>
 </div>
 </footer>
-<script>
-  async function fetchDirectusContent() {
-    try {
-      const apiUrl = 'https://cms.pyramis.com.cy/items/home_page';
-      const response = await fetch(apiUrl);
-      if (response.ok) {
-        const json = await response.json();
-        const data = json.data;
 
-        // Map data to the DOM elements
-        if (data.hero_title) document.querySelector('h1').innerText = data.hero_title;
-        if (data.hero_subtitle) document.querySelector('header p').innerText = data.hero_subtitle;
-        
-        const serviceTitles = document.querySelectorAll('h3');
-        const serviceDescriptions = document.querySelectorAll('section:nth-of-type(1) p');
-        
-        if (data.service_1_title && serviceTitles[0]) serviceTitles[0].innerHTML = data.service_1_title;
-        if (data.service_1_description && serviceDescriptions[0]) serviceDescriptions[0].innerHTML = data.service_1_description;
-        if (data.service_2_title && serviceTitles[1]) serviceTitles[1].innerHTML = data.service_2_title;
-        if (data.service_2_description && serviceDescriptions[1]) serviceDescriptions[1].innerHTML = data.service_2_description;
-        if (data.service_3_title && serviceTitles[2]) serviceTitles[2].innerHTML = data.service_3_title;
-        if (data.service_3_description && serviceDescriptions[2]) serviceDescriptions[2].innerHTML = data.service_3_description;
-      }
-    } catch(err) {
-      console.warn('Failed to load dynamic content from Directus CMS:', err);
+<script>
+  // Directus CMS Integration
+  function setEl(selector, value) {
+    const el = document.querySelector(selector);
+    if (el) el.innerText = value;
+  }
+  async function fetchCMSContent() {
+    try {
+    const res = await fetch('https://cms.pyramis.com.cy/items/home_page');
+    if (!res.ok) return;
+    const d = (await res.json()).data;
+    
+      if (d.hero_title) setEl('h1', d.hero_title);
+      if (d.hero_subtitle) setEl('header p', d.hero_subtitle);
+      const h3s = document.querySelectorAll('section h3');
+      const descs = document.querySelectorAll('section p');
+      if (d.service_1_title && h3s[0]) h3s[0].innerText = d.service_1_title;
+      if (d.service_1_description && descs[0]) descs[0].innerText = d.service_1_description;
+      if (d.service_2_title && h3s[1]) h3s[1].innerText = d.service_2_title;
+      if (d.service_2_description && descs[1]) descs[1].innerText = d.service_2_description;
+      if (d.service_3_title && h3s[2]) h3s[2].innerText = d.service_3_title;
+      if (d.service_3_description && descs[2]) descs[2].innerText = d.service_3_description;
+    
+    } catch(e) {
+      console.warn('Directus CMS fetch error:', e);
     }
   }
-  
-  document.addEventListener('DOMContentLoaded', fetchDirectusContent);
+  document.addEventListener('DOMContentLoaded', fetchCMSContent);
 </script>
 </body></html>
